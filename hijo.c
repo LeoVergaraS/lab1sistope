@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "hijo.h"
 
 juego *listaDeJuegosHijo(int comienzo, int *i)
 {
@@ -114,9 +115,9 @@ juego *listaDeJuegosHijo(int comienzo, int *i)
     return lista;
 }
 
-void calculosDelHijo(juego* juegos, int n, int *k, int *l, int *prom){
-    int caro = 0;
-    int barato = 10000;
+void calculosDelHijo(juego* juegos, int n, int *k, int *l, float *prom){
+    int caro = juegos[0].precio;
+    int barato = juegos[0].precio;
     int suma = 0;
     for(int i=0 ;i<n;i++){
         if(juegos[i].precio > caro){
@@ -131,3 +132,48 @@ void calculosDelHijo(juego* juegos, int n, int *k, int *l, int *prom){
     }
     *prom = suma/n;
 }
+
+juego* agregarJuego(juego* juegos, juego juego, int *n){
+    int i;
+    juego* nuevoJuegos = (juego*)malloc(sizeof(juego)*(*n+1));
+    for(i=0;i<*n;i++){
+        nuevoJuegos[i] = juegos[i];
+    }
+    nuevoJuegos[*n] = juego;
+    *n = *n + 1;
+    free(juegos);
+    return nuevoJuegos;
+}
+
+juego* juegosGratis(juego* juegos, int *n){
+    int i;
+    juego* juegosGratis = (juego*)malloc(sizeof(juego)*(*n));
+    for(i=0;i<n;i++){
+        if(juegos[i].gratis == 1){
+            juegosGratis = agregarJuego(juegosGratis, juegos[i], &(*n));
+        }
+    }
+    return juegosGratis;
+}
+
+void promedioPorPlataforma(juego* juegos, int n, float *w, float *m, float *l){
+    int win = 0;
+    int mac = 0;
+    int lin = 0;
+    for(int i=0 ;i<n;i++){
+        if(juegos[i].win == 1){
+            win++;
+        }
+        if(juegos[i].mac == 1){
+            mac++;
+        }
+        if(juegos[i].lin == 1){
+            lin++;
+        }
+    }
+    *w = win/n;
+    *m = mac/n;
+    *l = lin/n;
+}
+
+
