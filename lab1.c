@@ -3,6 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <sys/wait.h>
 #include "padre.c"
 
 #define READ 0
@@ -64,14 +65,14 @@ int main(int argc, char *argv[])
     int pipesHP[cantidadAnios][2]; // Comunicacion Hijo ---> Padre
 
     // Se generan los pipe de Padre Hijo
-    for(i = 0; i < cantidadAnios * 2; i++) {
+    for(i = 0; i < cantidadAnios; i++) {
         if(pipe(pipesPH[i]) == -1) {
             // ERROR
             return 0;
         }
     }   
     // Se generan los pipe de Hijo Padre
-    for(i = 0; i < cantidadAnios * 2; i++) {
+    for(i = 0; i < cantidadAnios; i++) {
         if(pipe(pipesHP[i]) == -1) {
             // ERROR
             return 0;
@@ -85,6 +86,7 @@ int main(int argc, char *argv[])
             printf("Error en la creacion del proceso\n");
             return 0;
         }else if(pids[i] == 0){ 
+			printf("Proceso hijo %d creado del proceso %d\n", getpid(),getppid());
 			// Proceso hijo
 			for (int j = 0; j < cantidadAnios; j++)
             {
@@ -118,6 +120,7 @@ int main(int argc, char *argv[])
 	}
 
 	// Proceso padre
+	printf("Proceso padre %d\n", getpid());
 	for(i = 0;i<cantidadAnios;i++){
 		close(pipesPH[i][READ]);
         close(pipesHP[i][WRITE]);
@@ -138,6 +141,13 @@ int main(int argc, char *argv[])
 		}
 	}
 
+	for(i=0;i<cantidadAnios;i++){
+		wait(NULL);
+	}
+	for(i=0;i<cantidadAnios;i++){
+		close(pipesPH[i][WRITE]);
+		close(pipesHP[i][READ]);
+	}
 	free(listaJuegos);
 
 
