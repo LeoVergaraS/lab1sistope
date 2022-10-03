@@ -17,7 +17,7 @@ int main(int argc, char *argv[]){
 	char nombreEntrada[255];
 	char nombreSalida[255];
 	int anioInicio;
-	float precioMinimo;
+	float precioMinimo=0;
 	int bandera = 0;
 
 	while ((option = getopt(argc, argv, ":i:o:d:p:b")) != -1){
@@ -56,7 +56,7 @@ int main(int argc, char *argv[]){
 	// Se crea el archivo intermedio.
 	int cantidadAnios = 0;
 	char *archivoIntermedio = "intermedio.txt";
-	int *cabeceras = escribirJuego(archivoIntermedio, listaJuegos, cantidadJuegos, &cantidadAnios);
+	int *cabeceras = escribirJuego(archivoIntermedio, listaJuegos, cantidadJuegos, &cantidadAnios, precioMinimo);
 
 	// Se genera un arreglo para almacenar los pids de cada proceso generado
 	int pids[cantidadAnios];
@@ -80,28 +80,29 @@ int main(int argc, char *argv[]){
 	}
 
 	char buffer[255];
-	char bufferTotal[1000];
 	int posInicial = 0;
-
+	int aniosLista;
+	// char** listaLineas = malloc(sizeof(char*) * cantidadAnios);
 	for (i = 0; i < cantidadAnios; i++){
 		pids[i] = fork();
 		if (pids[i] == -1){
 			printf("Error en la creacion del proceso\n");
 			return 0;
 		}else if (pids[i] == 0){
-			close(pipesPH[i][WRITE]);
-			close(pipesHP[i][READ]);
+			//for(int k=0; k<cantidadAnios; k++){
+				close(pipesPH[i][WRITE]);
+				close(pipesHP[i][READ]);
+			
 			// Proceso hijo
 			char buffer[255];
-			int posicionInicial, posicionFinal, anio;
-			float precio;
+			int posicionInicial, posicionFinal;
 			// printf("Proceso hijo %d creado\n", i);
 
 			if (read(pipesPH[i][READ], buffer, sizeof(char) * 255) == -1){
 				printf("Error en la lectura del pipe\n");
 				return 0;
 			}else{
-				sscanf(buffer, "%d;%d;%d;%f", &posicionInicial, &posicionFinal, &anio, &precio);
+				sscanf(buffer, "%d;%d", &posicionInicial, &posicionFinal);
 				// proceso hijo recibe el mensaje del padre
 				// Acá se le pasan las cabeceras a los procesos hijos
 				// Se calcula la información segun las cabeceras posicionInicial y posicionFinal;
@@ -110,47 +111,86 @@ int main(int argc, char *argv[]){
 
 				int caro, barato, win, mac, lin;
 				float promedio;
-				printf("anio: %d\n",juegosPorAnio[0].fecha);
+				//printf("anio: %d\n",juegosPorAnio[0].fecha);
 				calculosDelHijo(juegosPorAnio, cantidadJuegosPorAnio, &caro, &barato, &promedio);
 				//printf("cantidad %d anio %d bara %d, caro %d, promedio %f\n", cantidadJuegosPorAnio, juegosPorAnio[0].fecha, barato, caro, promedio);
 				promedioPorPlataforma(juegosPorAnio, cantidadJuegosPorAnio, &win, &mac, &lin);
 				//printf("anio %d win: %d, mac: %d, lin: %d\n", juegosPorAnio[0].fecha,win, mac, lin);
-				int *gratis = listaJuegosGratis(juegosPorAnio, cantidadJuegosPorAnio, &cantidadGratis);
-				/* printf("%d.- gratis: \n", juegosPorAnio[0].fecha);
-				for(int j=0;j<cantidadGratis;j++){
+				//gratis=listaJuegosGratis(juegosPorAnio, cantidadJuegosPorAnio, &cantidadGratis, gratis);
+				 //printf("%d.- gratis: \n", juegosPorAnio[0].fecha);
+				/*for(int j=0;j<cantidadGratis;j++){
 				printf("%s\n", juegosPorAnio[gratis[j]].nombre);
 				} */
 				char* bufferHijo = malloc(sizeof(char) * 5000);
 				sprintf(bufferHijo, "%d;Año: %d\nJuego más caro: %s\nJuego más barato: %s\nPromedio de precios: %f\nWindows: %d Mac: %d Linux: %d\n",juegosPorAnio[0].fecha, juegosPorAnio[0].fecha, juegosPorAnio[caro].nombre, juegosPorAnio[barato].nombre, promedio, win, mac, lin);
-				printf("%s\n",bufferHijo);
-				if(juegosPorAnio[0].fecha >= anio){
-					if (write(pipesHP[i][WRITE], bufferHijo, sizeof(char) * 5000) == -1){
-						return 0;
-					}
+				sprintf(bufferHijo, "%sJuegos gratis:\n", bufferHijo);
+				for(int j=0;j<cantidadJuegosPorAnio;++j){
+					//printf("%d\n",juegosPorAnio[j].gratis);
+					if(juegosPorAnio[j].gratis == 1){
+						sprintf(bufferHijo, "%s%s\n", bufferHijo, juegosPorAnio[j].nombre);
+        			}
 				}
+				//printf("%d\n",cantidadGratis);
+				for(int j=0;j<cantidadGratis;j++){
+					//printf( "anio:%d, %d\n",juegosPorAnio[0].fecha,gratis[i]);
+				}
+				//printf("%s\n",bufferHijo);
+				if (write(pipesHP[i][WRITE], bufferHijo, sizeof(char) * 5000) == -1){
+					printf("estoy en el error\n");
+					return 0;
+				}
+			
 				return 0;
 			}
 			// printf("Proceso hijo %d recibio mensaje\n", i);
-		}else if (pids[i] > 0){
-			close(pipesPH[i][READ]);
-			close(pipesHP[i][WRITE]);
-			sprintf(buffer, "%d;%d;%d;%f", posInicial, cabeceras[i], anioInicio, precioMinimo);
-			posInicial = cabeceras[i];
-			if (write(pipesPH[i][WRITE], buffer, sizeof(char) * 255) == -1){
-				return 0;
-			}
-			// Se espera a que terminen los procesos hijos
-			//waitpid(pids[i], NULL, WUNTRACED | WCONTINUED);
-			if (read(pipesHP[i][READ], bufferTotal, sizeof(char) * 1000) == -1){
-				printf("estoy en el error\n");
-				printf("Error en la lectura del pipe\n");
-				return 0;
-			}else{
-				//printf("%s\n", bufferTotal);
-			}
 		}
 	}
 
+	// Proceso padre
+	char bufferTotal[5000];
+	
+	for(int i=0;i<cantidadAnios;i++){
+		close(pipesPH[i][READ]);
+		close(pipesHP[i][WRITE]);
+	sprintf(buffer, "%d;%d", posInicial, cabeceras[i]);
+	posInicial = cabeceras[i];
+	if (write(pipesPH[i][WRITE], buffer, sizeof(char) * 255) == -1){
+		return 0;
+	}
+	}
+	// Se espera a que terminen los procesos hijos
+	FILE* archivoSalida = fopen(nombreSalida, "w");
+	fclose(archivoSalida);
+	for (i = 0; i < cantidadAnios; i++){
+		waitpid(pids[i], NULL, 0);
+		if (read(pipesHP[i][READ], bufferTotal, sizeof(char) * 5000) == -1){
+			printf("estoy en el error\n");
+			printf("Error en la lectura del pipe\n");
+			return 0;
+		}else{
+			//printf("Bandera %d\n",bandera);
+			char *token = strtok(bufferTotal, ";");
+			aniosLista = atoi(token);
+			
+			if(aniosLista>= anioInicio){
+				token = strtok(NULL, ";");
+				if(bandera == 1){
+					printf("%s\n",token);
+				}
+				escribirArchivoFinal(token,nombreSalida);
+			}
+			
+			// token = strtok(NULL, ";");
+			// strcpy(listaLineas[i], token);
+		}
+	}
+
+	/*mergeSort2(aniosLista, 0, cantidadAnios);
+	for(int i=0;i<cantidadAnios;i++){
+		printf("%d\n", aniosLista[i]);
+	}*/
+
+	
 	// Acá se le pasan las cabeceras a los procesos hijos
 
 	// printf("%s", bufferTotal);

@@ -161,7 +161,7 @@ int* agregarCabecera(int* cabeceras, int cabecera, int *n){
 // Función que escribe el juego
 // Entrada: Estructura juego
 // Salida: void
-int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n)
+int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n, float precioMinimo)
 {
     int * cabeceras= (int*)malloc(sizeof(int)*(*n));
     int len;
@@ -174,10 +174,11 @@ int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n)
     int fechaActual = juego[0].fecha;
     for (int j = 0; j < i-1; j++)
     {
-        fprintf(archivo, "%d;%s;%d;%f;%d;%d;%d;%d;%d;%d\n", juego[j].id, juego[j].nombre, juego[j].restriccion, juego[j].precio, juego[j].proximamente, juego[j].fecha, juego[j].gratis, juego[j].win, juego[j].mac, juego[j].lin);
-        len = ftell(archivo);
-        
-        if(juego[j+1].fecha != fechaActual){
+        if(juego[j].precio >= precioMinimo){
+            fprintf(archivo, "%d;%s;%d;%f;%d;%d;%d;%d;%d;%d\n", juego[j].id, juego[j].nombre, juego[j].restriccion, juego[j].precio, juego[j].proximamente, juego[j].fecha, juego[j].gratis, juego[j].win, juego[j].mac, juego[j].lin);
+            len = ftell(archivo);
+
+            if(juego[j+1].fecha != fechaActual){
             cabeceras = agregarCabecera(cabeceras, len, &(*n));
             fechaActual = juego[j+1].fecha;
             if(j+1 == i-1){
@@ -185,12 +186,25 @@ int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n)
                 len = ftell(archivo);
                 cabeceras = agregarCabecera(cabeceras, len, &(*n));
                 break;
+                }
             }
-        }
+        }   
     }
         
     fclose(archivo);
     return cabeceras;
+}
+
+void escribirArchivoFinal(char *string,char* nombreSalida)
+{
+    FILE *archivo= fopen(nombreSalida, "a");
+    if (archivo == NULL)
+    {
+        printf("No se pudo abrir el archivo");
+        return;
+    }
+    fprintf(archivo,"%s\n\n",string);   
+    fclose(archivo);
 }
 
 
