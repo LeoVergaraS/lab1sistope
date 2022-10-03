@@ -6,11 +6,16 @@
 #include <sys/wait.h>
 #include "padre.c"
 #include "hijo.c"
-#include "otros.c"
 
 #define READ 0
 #define WRITE 1
 
+/*Función main que tiene el proceso del padre y de los hijos, primero se ponen leen las flag, luego se
+crean los pipes, luego se crea el proceso padre y se leen los archivos, luego se crea el proceso hijo y se
+leen los archivos según las entradas por anios de las cabeceras. Luego se cierran los pipes y se espera a
+que los hijos terminen para finalmente escribir.*/
+//entrada: Argc y argv
+//salida: 0
 int main(int argc, char *argv[]){
 	int i;
 	int option;

@@ -145,7 +145,9 @@ juego *listaDeJuegos(char *nombreArchivo, int *i)
     return lista;
 }
 
-
+//Es un append para la lista de juegos con cabeceras de fseek y ftell
+//Entrada: lista de cabeceras, cabecera a agregar, cantidad nueva
+//Salida: lista de juegos
 int* agregarCabecera(int* cabeceras, int cabecera, int *n){
     int i;
     int* nuevasCabeceras = (int*)malloc(sizeof(int)*(*n+1));
@@ -195,6 +197,9 @@ int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n, float precioM
     return cabeceras;
 }
 
+//Función que escribe los juegos y calculos finales
+//Entrada: String con Estructura juego y el nombre dle archivo de salida
+//Salida: void
 void escribirArchivoFinal(char *string,char* nombreSalida)
 {
     FILE *archivo= fopen(nombreSalida, "a");
@@ -262,6 +267,9 @@ void merge(juego* juegos,int inicio,int medio,int fin){
 }
 
 
+//Esta funcion es el mergesort para ordenar por anios
+//Parametros: arreglo de enteros, entero, entero
+//Retorno: void, se ordena por dentro
 void mergeSort(juego* juegos, int ini, int fin){
 	// Caso base, se tiene solo 1 elemento.
 	if(ini==fin){

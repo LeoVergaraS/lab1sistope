@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "hijo.h"
 
+//Lee el archivo intermedio y crea una lista de juegos por cada hijo
+//Entrada: comienzo y fin del año
+//Salida: lista de juegos
 juego *listaDeJuegosHijo(int comienzo, int fin, int *i)
 {
     FILE *archivo = fopen("intermedio.txt", "r");
@@ -61,9 +64,10 @@ juego *listaDeJuegosHijo(int comienzo, int fin, int *i)
     fclose(archivo);
     return lista;
 }
-//k: caro
-//l: barato
-//prom: promedio
+
+//Calcula los promedios, el más caro y el más barato de los juegos por cada hijo
+//Entrada: lista de juegos, tamaño de la lista, punteros a los promedios, el más caro y el más barato
+//Salida: nada
 void calculosDelHijo(juego* juegos, int n, int *c, int *b, float *prom){
     int caro = juegos[0].precio;
     int barato = juegos[0].precio;
@@ -87,36 +91,9 @@ void calculosDelHijo(juego* juegos, int n, int *c, int *b, float *prom){
 
 }
 
-int* agregarElemento(int* Lista, int elemento, int *n){
-    int i;
-    int* nuevasLista = (int*)malloc(sizeof(int)*(*n+1));
-    for(i=0;i<*n;i++){
-        nuevasLista[i] = Lista[i];
-    }
-    nuevasLista[*n] = elemento;
-    *n = *n + 1;
-    free(Lista);
-    return nuevasLista;
-}
-
-/* int* listaJuegosGratis(juego* juegos, int tam,int *n,int* gratis){
-    int i;
-    int* juegosGratis = (int*)malloc(sizeof())
-    for(i=0;i<tam;i++){
-        //printf("juegos[i].gratis: %d\n",juegos[i].gratis);
-        if(juegos[i].gratis == 1){
-            //printf("juegos[i].gratis: %d\n",juegos[i].id);
-           gratis = agregarElemento(gratis,i,&(*n));
-           //printf("juegos[i].gratis: %d\n",juegos[i].gratis);
-           //printf("aaajuegosGratis: %d\n",juegosGratis[*n-1]);
-        }
-    }
-    for(int j=0;j<*n;j++){
-		printf( "%d\n",gratis[j]);
-	}
-    return gratis;
-} */
-
+//Calcula la cobertura de cada plataforma por año
+//Entrada: lista de juegos, tamaño de la lista, punteros a los promedios, el más caro y el más barato
+//Salida: nada
 void promedioPorPlataforma(juego* juegos, int n, int *w, int *m, int *l){
     //printf("%d %d\n",juegos[1].fecha,juegos[1].win);
     int win = 0;
@@ -142,71 +119,4 @@ void promedioPorPlataforma(juego* juegos, int n, int *w, int *m, int *l){
     return;
 }
 
-void merge2(int* numeros,int inicio,int medio,int fin){
-	// Se inicia en cero una lista de struct de datos temporal
-	// para dejar los datos.
-	int* temp = (int*)calloc(fin-inicio+1,sizeof(int));
-	// Se establecen el inicio del arreglo izquierdo y el derecho.
-	int izq = inicio;
-	int der = medio+1;
-	int k = 0;
-
-	// Se sigue copiando hasta que se llegue al final de 
-	// alguna de las 2 listas.
-	while(izq<=medio && der<=fin){
-		if(numeros[izq]<=numeros[der]){
-			// Si la cantidad que se repite del elemento izquierdo
-			// es el menor se copia en la lista temporal.
-			temp[k] = numeros[izq];
-			izq++;
-		}else{
-			// Si no, se copia el elemento derecho en la lista temporal. 
-			temp[k] = numeros[der];
-			der++;
-		}
-		k++;
-	} 
-	// Cuando uno de los 2 se pase del final, se tiene 
-	// que copiar el arreglo que sobre.
-
-	// Se supone que en el arreglo izquierdo quedaron datos.
-	for(;izq<=medio;izq++){
-		temp[k] = numeros[izq];
-		k++;
-	}
-
-	// Se supone que en el arreglo derecho quedaron datos.
-	for(;der<=fin;der++){
-		temp[k] = numeros[der];
-		k++;
-	}
-
-	// Se copia la lista temporal en el arreglo de datos.
-	int l=0;
-	for(k=inicio;k<=fin;k++){
-		numeros[k] = temp[l];
-		l++;
-	}
-	// Se libera el espacio de la lista temporal.
-	free(temp);
-	return;
-}
-
-
-void mergeSort2(int* numeros, int ini, int fin){
-	// Caso base, se tiene solo 1 elemento.
-	if(ini==fin){
-		return;
-	} else{ // Se tiene mas de 1 elemento.
-		// Se calcula el medio del arreglo.
-		int med = (ini+fin)/2;
-		// Se ordena el arreglo, pero desde el inicio hasta el medio.
-		mergeSort2(numeros,ini,med);
-		// Se ordena el arreglo, pero desde el medio+1 hasta el fin.
-		mergeSort2(numeros,med+1,fin);
-		// Se unen la lista ordenadamente.
-		merge2(numeros,ini,med,fin);
-		return;
-	}
-}
 
