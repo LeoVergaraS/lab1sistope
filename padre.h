@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 typedef struct game{
-    long id;
-    char nombre[255];
+    int id;
+    char nombre[3000];
     int restriccion;
     float precio;
     int proximamente;

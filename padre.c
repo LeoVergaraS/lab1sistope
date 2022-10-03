@@ -68,7 +68,7 @@ juego *listaDeJuegos(char *nombreArchivo, int *i)
         }
         if (contador == 9)
         {
-            sscanf(linea, "%ld,%[^,],%d,%f,%[^,],%d,%[^,],%[^,],%[^,],%[^,]", &lista[j].id, lista[j].nombre, &lista[j].restriccion, &lista[j].precio, prox, &lista[j].fecha, gratis, win, mac, lin);
+            sscanf(linea, "%d,%[^,],%d,%f,%[^,],%d,%[^,],%[^,],%[^,],%[^,]", &lista[j].id, lista[j].nombre, &lista[j].restriccion, &lista[j].precio, prox, &lista[j].fecha, gratis, win, mac, lin);
             lista[j].proximamente = transformarStringABool(prox);
             lista[j].gratis = transformarStringABool(gratis);
             lista[j].win = transformarStringABool(win);
@@ -85,7 +85,7 @@ juego *listaDeJuegos(char *nombreArchivo, int *i)
             {
                 if (p == 0)
                 {
-                    sscanf(token, "%ld", &lista[j].id);
+                    sscanf(token, "%d", &lista[j].id);
                 }
                 else if (p == 1)
                 {
@@ -172,15 +172,23 @@ int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n)
         return NULL;
     }
     int fechaActual = juego[0].fecha;
-    for (int j = 0; j < i; j++)
+    for (int j = 0; j < i-1; j++)
     {
+        fprintf(archivo, "%d;%s;%d;%f;%d;%d;%d;%d;%d;%d\n", juego[j].id, juego[j].nombre, juego[j].restriccion, juego[j].precio, juego[j].proximamente, juego[j].fecha, juego[j].gratis, juego[j].win, juego[j].mac, juego[j].lin);
         len = ftell(archivo);
-        if(juego[j].fecha != fechaActual){
+        
+        if(juego[j+1].fecha != fechaActual){
             cabeceras = agregarCabecera(cabeceras, len, &(*n));
-            fechaActual = juego[j].fecha;
+            fechaActual = juego[j+1].fecha;
+            if(j+1 == i-1){
+                fprintf(archivo, "%d;%s;%d;%f;%d;%d;%d;%d;%d;%d\n", juego[j+1].id, juego[j+1].nombre, juego[j+1].restriccion, juego[j+1].precio, juego[j+1].proximamente, juego[j+1].fecha, juego[j+1].gratis, juego[j+1].win, juego[j+1].mac, juego[j+1].lin);
+                len = ftell(archivo);
+                cabeceras = agregarCabecera(cabeceras, len, &(*n));
+                break;
+            }
         }
-        fprintf(archivo, "%ld, %s, %d, %f, %d, %d, %d, %d, %d, %d\n", juego[j].id, juego[j].nombre, juego[j].restriccion, juego[j].precio, juego[j].proximamente, juego[j].fecha, juego[j].gratis, juego[j].win, juego[j].mac, juego[j].lin);
     }
+        
     fclose(archivo);
     return cabeceras;
 }
