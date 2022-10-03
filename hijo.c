@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "hijo.h"
 
 //Lee el archivo intermedio y crea una lista de juegos por cada hijo
@@ -99,7 +98,6 @@ void promedioPorPlataforma(juego* juegos, int n, int *w, int *m, int *l){
     int win = 0;
     int mac = 0;
     int lin = 0;
-    char* stringFinal;
     for(int i=0 ;i<n;i++){
         //printf("%d %d\n",juegos[i].fecha,juegos[i].win);
         if(juegos[i].win == 1){

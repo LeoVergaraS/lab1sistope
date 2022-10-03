@@ -1,19 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
-typedef struct game{
-    int id;
-    char nombre[3000];
-    int restriccion;
-    float precio;
-    int proximamente;
-    int fecha;
-    int gratis;
-    int win;
-    int mac;
-    int lin;
-} juego;
+#include "juego.h"
 
 juego *nuevoJuego();
 int transformarStringABool(char *cadena);

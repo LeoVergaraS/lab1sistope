@@ -4,8 +4,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/wait.h>
-#include "padre.c"
-#include "hijo.c"
+#include "padre.h"
+#include "hijo.h"
+#include "juego.h"
 
 #define READ 0
 #define WRITE 1
@@ -62,7 +63,7 @@ int main(int argc, char *argv[]){
 	int cantidadAnios = 0;
 	char *archivoIntermedio = "intermedio.txt";
 	int *cabeceras = escribirJuego(archivoIntermedio, listaJuegos, cantidadJuegos, &cantidadAnios, precioMinimo);
-
+	//printf("%d\n",cantidadAnios);
 	// Se genera un arreglo para almacenar los pids de cada proceso generado
 	int pids[cantidadAnios];
 	// Se definen un pipes para la comunicacion entre proceso padre y sus hijos
@@ -128,11 +129,13 @@ int main(int argc, char *argv[]){
 				} */
 				char* bufferHijo = malloc(sizeof(char) * 5000);
 				sprintf(bufferHijo, "%d;Año: %d\nJuego más caro: %s\nJuego más barato: %s\nPromedio de precios: %f\nWindows: %d Mac: %d Linux: %d\n",juegosPorAnio[0].fecha, juegosPorAnio[0].fecha, juegosPorAnio[caro].nombre, juegosPorAnio[barato].nombre, promedio, win, mac, lin);
-				sprintf(bufferHijo, "%sJuegos gratis:\n", bufferHijo);
+				//sprintf(bufferHijo, "%sJuegos gratis:\n", bufferHijo);
+				strcat(bufferHijo, "Juegos gratis:\n");
 				for(int j=0;j<cantidadJuegosPorAnio;++j){
-					//printf("%d\n",juegosPorAnio[j].gratis);
 					if(juegosPorAnio[j].gratis == 1){
-						sprintf(bufferHijo, "%s%s\n", bufferHijo, juegosPorAnio[j].nombre);
+						strcat(bufferHijo, juegosPorAnio[j].nombre);
+						strcat(bufferHijo, "\n");
+						//sprintf(bufferHijo, "%s%s\n", bufferHijo, juegosPorAnio[j].nombre);
         			}
 				}
 				//printf("%d\n",cantidadGratis);

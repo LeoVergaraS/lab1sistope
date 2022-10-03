@@ -1,27 +1,14 @@
-70;Half-Life;0;5.500000;0;1998;0;1;1;0
-10;Counter-Strike;0;5.500000;0;2000;0;1;1;0
 40990;Mafia;17;12.490000;0;2002;0;1;0;0
-80;Counter-Strike: Condition Zero;0;5.500000;0;2004;0;1;1;0
-220;Half-Life 2;0;5.500000;0;2004;0;1;1;0
-240;Counter-Strike: Source;0;5.500000;0;2004;0;1;1;0
-280;Half-Life: Source;0;5.500000;0;2004;0;1;1;0
 13230;Unreal Tournament 2004: Editor's Choice Edition;17;9.380000;0;2004;0;1;0;0
-1500;Darwinia;0;5.500000;0;2005;0;1;1;0
 3920;Sid Meier's Pirates!;0;6.880000;0;2005;0;1;0;0
 39200;Dungeon Siege II;0;6.000000;0;2005;0;1;0;0
-360;Half-Life Deathmatch: Source;0;5.500000;0;2006;0;1;1;0
-1300;SiN Episodes: Emergence;0;5.500000;0;2006;0;1;0;0
 1510;Uplink;0;6.880000;0;2006;0;1;1;0
-1520;DEFCON;0;5.500000;0;2006;0;1;1;0
 1600;Dangerous Waters;0;9.380000;0;2006;0;1;0;0
 1610;Space Empires IV Deluxe;0;6.880000;0;2006;0;1;0;0
 1620;Jagged Alliance 2 Gold;0;11.880000;0;2006;0;1;0;0
-1630;Disciples II: Rise of the Elves ;0;5.000000;0;2006;0;1;0;0
-1640;Disciples II: Gallean's Return;0;5.000000;0;2006;0;1;0;0
 1690;Space Empires V;0;9.380000;0;2006;0;1;0;0
 2100;Dark Messiah of Might & Magic;17;8.000000;0;2006;0;1;0;0
 2400;The Ship: Murder Party;0;6.880000;0;2006;0;1;0;0
-2500;Shadowgrounds;17;5.000000;0;2006;0;1;1;0
 2610;GUN™;17;18.620001;0;2006;0;1;0;0
 2620;Call of Duty®;0;18.620001;0;2006;0;1;0;0
 2630;Call of Duty® 2;0;18.620001;0;2006;0;1;1;0
@@ -31,13 +18,11 @@
 2910;Fleet Command;0;6.880000;0;2006;0;1;0;0
 2920;Sub Command;0;6.880000;0;2006;0;1;0;0
 2990;FlatOut 2™;0;22.879999;0;2006;0;1;0;0
-3800;Advent Rising;0;5.500000;0;2006;0;1;0;0
 3830;Psychonauts;0;6.880000;0;2006;0;1;1;0
 3900;Sid Meier's Civilization® IV;0;11.880000;0;2006;0;1;1;0
 4000;Garry's Mod;0;6.880000;0;2006;0;1;1;0
 4230;RACE - The WTCC Game;0;18.620001;0;2006;0;1;0;0
 4700;Total War: MEDIEVAL II – Definitive Edition;0;14.750000;0;2006;0;1;1;0
-400;Portal;0;5.500000;0;2007;0;1;1;0
 2200;Quake III Arena;0;10.750000;0;2007;0;1;0;0
 2310;Quake;17;7.880000;0;2007;0;1;0;0
 2600;Vampire: The Masquerade - Bloodlines;17;18.620001;0;2007;0;1;0;0
@@ -50,7 +35,6 @@
 4570;"Warhammer® 40000: Dawn of War® - Game of the Year Edition";17;8.620000;0;2007;0;1;0;0
 4580;"Warhammer® 40000: Dawn of War® - Dark Crusade";17;8.620000;0;2007;0;1;0;0
 4780;Medieval II: Total War™ Kingdoms;0;14.750000;0;2007;0;1;1;0
-6220;FlatOut;0;5.620000;0;2007;0;1;0;0
 6300;Dreamfall: The Longest Journey;0;11.880000;0;2007;0;1;0;0
 6310;The Longest Journey;0;6.880000;0;2007;0;1;0;0
 6420;Nexus - The Jupiter Incident;0;6.880000;0;2007;0;1;0;0
@@ -60,12 +44,10 @@
 6860;Hitman: Blood Money;17;6.620000;0;2007;0;1;0;0
 6870;Battlestations: Midway;0;6.000000;0;2007;0;1;0;0
 6880;Just Cause;17;6.000000;0;2007;0;1;0;0
-6900;Hitman: Codename 47;17;5.500000;0;2007;0;1;0;0
 6910;Deus Ex: Game of the Year Edition;17;6.000000;0;2007;0;1;0;0
 6920;Deus Ex: Invisible War;17;6.000000;0;2007;0;1;0;0
 6980;Thief: Deadly Shadows;0;7.750000;0;2007;0;1;0;0
 7000;Tomb Raider: Legend;13;6.000000;0;2007;0;1;0;0
-7010;Project: Snowblind;0;5.120000;0;2007;0;1;0;0
 7020;Rogue Trooper;0;6.880000;0;2007;0;1;0;0
 7110;Jade Empire™: Special Edition;0;13.750000;0;2007;0;1;0;0
 7260;Loki;0;6.880000;0;2007;0;1;0;0
@@ -75,18 +57,13 @@
 8800;Civilization IV: Beyond the Sword;0;6.880000;0;2007;0;1;1;0
 9310;"Warhammer® 40000: Dawn of War® – Winter Assault";17;8.620000;0;2007;0;1;0;0
 9340;Company of Heroes: Opposing Fronts;18;11.880000;0;2007;0;1;0;0
-9500;Gish;0;5.500000;0;2007;0;1;1;0
 11200;Shadowgrounds Survivor;17;6.880000;0;2007;0;1;1;0
 39530;Painkiller: Black Edition;0;6.880000;0;2007;0;1;0;0
-50970;Mystery Case Files: Madame Fate®;0;5.000000;0;2007;0;1;0;0
-500;Left 4 Dead;0;5.500000;0;2008;0;1;1;0
-1530;Multiwinia;0;5.500000;0;2008;0;1;1;0
 2780;ARMA: Combat Operations;0;6.250000;0;2008;0;1;0;0
 2820;X3: Terran Conflict;0;10.000000;0;2008;0;1;1;0
 4460;City Life 2008;0;6.880000;0;2008;0;1;0;0
 4470;Silverfall: Earth Awakening;0;6.880000;0;2008;0;1;0;0
 7200;Trackmania United Forever;0;24.879999;0;2008;0;1;0;0
-8100;Conflict: Denied Ops;17;5.120000;0;2008;0;1;0;0
 8140;Tomb Raider: Underworld;13;7.750000;0;2008;0;1;0;0
 8340;Strong Bad's Cool Game for Attractive People: Season 1;0;8.000000;0;2008;0;1;0;0
 9450;"Warhammer® 40000: Dawn of War® - Soulstorm";17;8.620000;0;2008;0;1;0;0
@@ -97,20 +74,14 @@
 10460;The Club™;0;9.380000;0;2008;0;1;0;0
 11040;Sherlock Holmes - Nemesis;0;8.750000;0;2008;0;1;0;0
 11050;Dracula: Origin;0;8.750000;0;2008;0;1;0;0
-11250;Pacific Storm;0;5.620000;0;2008;0;1;0;0
-11260;Pacific Storm Allies;0;5.620000;0;2008;0;1;0;0
 12310;Culpa Innata;0;6.880000;0;2008;0;1;0;0
 12320;Sacred Gold;0;6.880000;0;2008;0;1;0;0
 12330;Darkstar One;0;6.880000;0;2008;0;1;0;0
 12340;Jack Keane;0;6.880000;0;2008;0;1;0;0
 12360;FlatOut: Ultimate Carnage;0;22.879999;0;2008;0;1;0;0
 12390;Exodus from the Earth ;0;9.380000;0;2008;0;1;0;0
-12500;PuzzleQuest: Challenge of the Warlords;0;5.500000;0;2008;0;1;0;0
 12520;18 Wheels of Steel: American Long Haul;0;6.880000;0;2008;0;1;0;0
-12530;Hunting Unlimited™ 2008;0;5.500000;0;2008;0;1;0;0
-12590;Sprint Cars Road to Knoxville;0;5.500000;0;2008;0;1;0;0
 12710;Overlord™: Raising Hell;0;6.880000;0;2008;0;1;0;0
-12900;AudioSurf;0;5.500000;0;2008;0;1;0;0
 13200;Unreal 2: The Awakening;17;9.380000;0;2008;0;1;0;0
 13240;Unreal Tournament: Game of the Year Edition;17;6.880000;0;2008;0;1;0;0
 13250;Unreal Gold;0;6.880000;0;2008;0;1;0;0
@@ -148,20 +119,11 @@
 16020;Samantha Swift and the Hidden Roses of Athena;0;6.880000;0;2008;0;1;0;0
 16030;7 Wonders: Treasures of Seven;0;6.880000;0;2008;0;1;0;0
 16040;Luxor: Quest for the Afterlife ;0;6.880000;0;2008;0;1;0;0
-16110;Virtual Villagers: The Lost Children;0;5.500000;0;2008;0;1;0;0
-16120;Plant Tycoon;0;5.500000;0;2008;0;1;0;0
-16130;Fish Tycoon;0;5.500000;0;2008;0;1;0;0
-16180;Virtual Villagers - The Secret City;0;5.500000;0;2008;0;1;0;0
-16300;Everyday Shooter;0;5.500000;0;2008;0;1;0;0
 16810;Sid Meier's Civilization IV: Colonization;0;11.880000;0;2008;0;1;1;0
 17330;Crysis Warhead®;17;17.500000;0;2008;0;1;0;0
 17390;SPORE™;0;17.500000;0;2008;0;1;0;0
 17440;SPORE™ Creepy & Cute Parts Pack;0;17.500000;0;2008;0;1;0;0
 17460;Mass Effect (2007);17;17.500000;0;2008;0;1;0;0
-18400;Crazy Machines 2;0;5.500000;0;2008;0;1;0;0
-18420;Crazy Machines;0;5.500000;0;2008;0;1;0;0
-18430;Crazy Machines 1.5;0;5.500000;0;2008;0;1;0;0
-18500;Defense Grid: The Awakening;0;5.500000;0;2008;0;1;0;0
 19000;Silent Hill Homecoming;17;18.620001;0;2008;0;1;0;0
 19800;Brothers in Arms: Earned in Blood™;17;8.000000;0;2008;0;1;0;0
 19810;The Sum of All Fears;0;6.240000;0;2008;0;1;0;0
@@ -169,8 +131,6 @@
 19900;Far Cry® 2;17;8.000000;0;2008;0;1;0;0
 19980;Prince of Persia®;0;8.000000;0;2008;0;1;0;0
 20510;S.T.A.L.K.E.R.: Clear Sky;0;6.880000;0;2008;0;1;0;0
-20700;Starscape;0;5.500000;0;2008;0;1;0;0
-20710;Mr. Robot;0;5.500000;0;2008;0;1;0;0
 20900;The Witcher: Enhanced Edition Director's Cut;0;6.880000;0;2008;0;1;1;0
 21000;LEGO® Batman™: The Videogame;0;11.880000;0;2008;0;1;0;0
 22000;World of Goo;0;8.000000;0;2008;0;1;1;0
@@ -179,18 +139,10 @@
 23400;Imperium Romanum Gold Edition;0;7.190000;0;2008;0;1;0;0
 23420;Europa Universalis: Rome - Gold Edition ;0;6.880000;0;2008;0;1;0;0
 24420;Aquaria;0;6.880000;0;2008;0;1;0;0
-550;Left 4 Dead 2;0;5.500000;0;2009;0;1;1;0
 1250;Killing Floor;17;6.880000;0;2009;0;1;1;0
 1930;Two Worlds Epic Edition;17;6.880000;0;2009;0;1;1;0
 3170;King's Bounty: Armored Princess;0;6.880000;0;2009;0;1;1;0
-3700;Sniper Elite;0;5.620000;0;2009;0;1;0;0
-3710;Judge Dredd: Dredd vs. Death;0;5.620000;0;2009;0;1;0;0
 3720;Evil Genius;0;6.880000;0;2009;0;1;0;0
-6000;STAR WARS™ Republic Commando™;0;5.500000;0;2009;0;1;0;0
-6020;STAR WARS™ Jedi Knight - Jedi Academy™;0;5.500000;0;2009;0;1;1;0
-6030;STAR WARS™ Jedi Knight II - Jedi Outcast™;0;5.500000;0;2009;0;1;1;0
-6060;"Star Wars: Battlefront 2 (Classic 2005)";0;5.500000;0;2009;0;1;0;0
-6080;Thrillville®: Off the Rails™;0;5.500000;0;2009;0;1;0;0
 7510;X-Blades;17;6.880000;0;2009;0;1;1;0
 9480;Saints Row 2;17;6.880000;0;2009;0;1;0;0
 9850;Codename: Panzers - Cold War;0;9.380000;0;2009;0;1;0;0
@@ -208,8 +160,6 @@
 12420;Perimeter 2: New Earth;0;9.380000;0;2009;0;1;0;0
 12450;Ankh 3: Battle of the Gods;0;6.880000;0;2009;0;1;0;0
 12480;9th Company: Roots Of Terror;0;6.880000;0;2009;0;1;0;0
-12640;Drakensang;0;5.500000;0;2009;0;1;0;0
-12690;Hunting Unlimited 2010;0;5.500000;0;2009;0;1;0;0
 12770;Rise of the Argonauts;17;6.880000;0;2009;0;1;0;0
 12790;Damnation;17;6.880000;0;2009;0;1;0;0
 12810;Overlord II;0;6.880000;0;2009;0;1;0;0
@@ -220,13 +170,11 @@
 15520;AaAaAA!!! - A Reckless Disregard for Gravity;0;6.880000;0;2009;0;1;0;0
 15620;"Warhammer 40000: Dawn of War II";17;11.880000;0;2009;0;1;1;0
 16060;Samantha Swift and the Golden Touch;0;6.880000;0;2009;0;1;0;0
-16200;Virtual Families;0;5.500000;0;2009;0;1;0;0
 16450;F.E.A.R. 2: Project Origin;17;12.000000;0;2009;0;1;0;0
 17410;Mirror's Edge™;0;17.500000;0;2009;0;1;0;0
 17470;Dead Space;0;17.500000;0;2009;0;1;0;0
 17480;Command & Conquer: Red Alert 3;0;17.500000;0;2009;0;1;0;0
 18470;Helldorado;0;6.880000;0;2009;0;1;0;0
-18600;Mayhem Intergalactic;0;5.500000;0;2009;0;1;0;0
 18700;And Yet It Moves;0;6.880000;0;2009;0;1;1;0
 20530;Red Faction;0;6.880000;0;2009;0;1;0;0
 20540;Company of Heroes: Tales of Valor;17;11.880000;0;2009;0;1;0;0
@@ -240,15 +188,11 @@
 22120;Penumbra: Black Plague Gold Edition;17;6.880000;0;2009;0;1;1;0
 22130;Hearts of Iron 2 Complete;0;9.380000;0;2009;0;1;0;0
 22180;Penumbra Overture;17;6.880000;0;2009;0;1;1;0
-22200;Zeno Clash;0;5.000000;0;2009;0;1;0;0
 22320;The Elder Scrolls III: Morrowind® Game of the Year Edition;0;10.750000;0;2009;0;1;0;0
 22330;The Elder Scrolls IV: Oblivion® Game of the Year Edition;17;10.750000;0;2009;0;1;0;0
 22370;Fallout 3: Game of the Year Edition;17;11.880000;0;2009;0;1;0;0
-23300;Yosumin!™;0;5.120000;0;2009;0;1;0;0
-23380;Gyromancer;0;5.120000;0;2009;0;1;0;0
 23450;Grand Ages: Rome;0;7.190000;0;2009;0;1;0;0
 23490;Tropico 3;0;7.190000;0;2009;0;1;0;0
-23500;Puzzle Quest: Galactrix;0;5.500000;0;2009;0;1;0;0
 23700;Puzzle Kingdoms;0;9.380000;0;2009;0;1;0;0
 24400;King Arthur - The Role-playing Wargame;0;6.880000;0;2009;0;1;0;0
 24410;Crusaders: Thy Kingdom Come;0;6.880000;0;2009;0;1;0;0
@@ -259,7 +203,6 @@
 25800;Europa Universalis III Complete;0;9.380000;0;2009;0;1;1;0
 25830;Knights of Honor;0;6.880000;0;2009;0;1;0;0
 25890;Hearts of Iron III;0;6.880000;0;2009;0;1;1;0
-25900;King's Bounty: The Legend;0;5.000000;0;2009;0;1;1;0
 25910;Supreme Ruler 2020 Gold;0;6.880000;0;2009;0;1;0;0
 25930;East India Company;0;6.880000;0;2009;0;1;0;0
 25980;Majesty 2;0;6.880000;0;2009;0;1;0;0
@@ -267,11 +210,8 @@
 26000;The Maw;0;6.880000;0;2009;0;1;0;0
 26800;Braid;0;9.380000;0;2009;0;1;1;0
 26900;Crayon Physics Deluxe;0;11.880000;0;2009;0;1;1;0
-27000;The Path;0;5.500000;0;2009;0;1;1;0
 27200;Summer Athletics;0;11.880000;0;2009;0;1;0;0
 27400;Dangerous High School Girls in Trouble!™;0;11.880000;0;2009;0;1;1;0
-27800;Space Giraffe;0;5.500000;0;2009;0;1;0;0
-29180;Osmos;0;5.500000;0;2009;0;1;1;0
 29540;Guild Wars® Game of the Year Edition;0;9.620000;0;2009;0;1;0;0
 29560;Guild Wars Factions®;0;9.620000;0;2009;0;1;0;0
 29570;Guild Wars® Trilogy;0;14.380000;0;2009;0;1;0;0
@@ -281,10 +221,7 @@
 32120;Chainz 2: Relinked;0;6.880000;0;2009;0;1;0;0
 32140;Midnight Mysteries;0;6.880000;0;2009;0;1;0;0
 32160;Zombie Bowl-o-Rama;0;6.880000;0;2009;0;1;0;0
-32200;Metal Drift;0;5.500000;0;2009;0;1;0;0
 32330;LEGO® Indiana Jones™: The Original Adventures;0;9.620000;0;2009;0;1;0;0
-32360;The Secret of Monkey Island: Special Edition;0;5.500000;0;2009;0;1;0;0
-32370;STAR WARS™ - Knights of the Old Republic™;0;5.500000;0;2009;0;1;1;0
 32420;STAR WARS™: The Clone Wars - Republic Heroes™;0;9.620000;0;2009;0;1;0;0
 32430;STAR WARS™ - The Force Unleashed™ Ultimate Sith Edition;0;9.620000;0;2009;0;1;1;0
 32440;LEGO® Star Wars™ - The Complete Saga;0;9.620000;0;2009;0;1;0;0
@@ -302,21 +239,16 @@
 32760;Tachyon: The Fringe;0;6.880000;0;2009;0;1;0;0
 32770;Joint Operations: Combined Arms Gold;0;11.880000;0;2009;0;1;0;0
 32900;Restaurant Empire II;0;11.880000;0;2009;0;1;0;0
-33180;Zombie Shooter 2;0;5.500000;0;2009;0;1;0;0
-33520;Tropico Reloaded;0;5.000000;0;2009;0;1;0;0
 33730;18 Wheels of Steel: Extreme Trucker;0;6.880000;0;2009;0;1;0;0
-34410;Death to Spies: Moment of Truth;17;5.000000;0;2009;0;1;0;0
 34600;Order of War™;0;6.880000;0;2009;0;1;0;0
 34630;Massive Assault;0;6.880000;0;2009;0;1;0;0
 34640;Massive Assault: Phantom Renaissance;0;6.880000;0;2009;0;1;0;0
 35000;Mini Ninjas;0;8.620000;0;2009;0;1;0;0
 35300;Warfare;0;7.120000;0;2009;0;1;0;0
-35310;Clutch;0;5.500000;0;2009;0;1;0;0
 35700;Trine Enchanted Edition;0;9.380000;0;2009;0;1;1;0
 36900;Angle of Attack;0;6.880000;0;2009;0;1;0;0
 36910;All Aspect Warfare;0;6.880000;0;2009;0;1;0;0
 37000;The Void;0;6.880000;0;2009;0;1;0;0
-37800;Quantz;0;5.500000;0;2009;0;1;1;0
 37960;Jewel Quest Pack;0;11.880000;0;2009;0;1;0;0
 38000;Mahjong Quest Collection;0;6.880000;0;2009;0;1;0;0
 38070;Coconut Queen;0;6.880000;0;2009;0;1;0;0
@@ -337,7 +269,6 @@
 40300;Risen;17;6.880000;0;2009;0;1;0;0
 40330;Secret Files: Tunguska;0;6.880000;0;2009;0;1;0;0
 40340;Secret Files 2: Puritas Cordis;0;6.880000;0;2009;0;1;0;0
-40400;AI War: Fleet Command;0;5.500000;0;2009;0;1;1;0
 40700;Machinarium;0;8.120000;0;2009;0;1;1;0
 41000;Serious Sam HD: The First Encounter;17;9.380000;0;2009;0;1;0;0
 41500;Torchlight;0;9.380000;0;2009;0;1;1;0
@@ -347,20 +278,15 @@
 42810;For The Glory: A Europa Universalis Game;0;6.880000;0;2009;0;1;0;0
 43100;World of Zoo;0;9.380000;0;2009;0;1;0;0
 45700;Devil May Cry 4;0;17.209999;0;2009;0;1;0;0
-300;Day of Defeat: Source;0;5.500000;0;2010;0;1;1;0
-6120;Shank;17;5.500000;0;2010;0;1;1;0
 7340;Azada;0;6.880000;0;2010;0;1;0;0
 8190;Just Cause 2;17;12.880000;0;2010;0;1;0;0
 8930;Sid Meier's Civilization® V;0;18.120001;0;2010;0;1;1;0
-9980;The UnderGarden;0;5.000000;0;2010;0;1;0;0
 10680;Aliens vs. Predator™;17;9.380000;0;2010;0;1;0;0
 12200;Bully: Scholarship Edition;0;9.380000;0;2010;0;1;0;0
 15750;Oddworld: Stranger's Wrath HD;0;8.620000;0;2010;0;1;0;0
 18040;DeathSpank;0;13.750000;0;2010;0;1;1;0
 18050;DeathSpank: Thongs of Virtue;0;8.000000;0;2010;0;1;1;0
-19020;Puzzle Chronicles;0;5.500000;0;2010;0;1;0;0
 19030;Rocket Knight;0;8.000000;0;2010;0;1;0;0
-19080;Biozone;0;5.500000;0;2010;0;1;0;0
 20570;"Warhammer® 40000: Dawn of War® II Chaos Rising";17;11.880000;0;2010;0;1;1;0
 21090;F.E.A.R.;17;53.750000;0;2010;0;1;0;0
 21130;LEGO® Harry Potter: Years 1-4;0;17.500000;0;2010;0;1;0;0
@@ -369,19 +295,15 @@
 22610;Alien Breed: Impact;0;6.880000;0;2010;0;1;0;0
 22650;Alien Breed 2: Assault;0;6.880000;0;2010;0;1;0;0
 22670;Alien Breed 3: Descent;0;6.880000;0;2010;0;1;0;0
-23455;Grand Ages: Rome - Reign of Augustus;0;5.000000;0;2010;0;1;0;0
 23600;Depths of Peril;0;6.880000;0;2010;0;1;1;0
 24640;Trainz: Classic Cabon City;0;9.620000;0;2010;0;1;0;0
 24650;Trainz Settle and Carlisle;0;11.880000;0;2010;0;1;0;0
 24780;SimCity™ 4 Deluxe Edition;0;17.500000;0;2010;0;1;1;0
 24960;Battlefield: Bad Company™ 2;17;17.500000;0;2010;0;1;0;0
 24980;Mass Effect 2 (2010);17;17.500000;0;2010;0;1;0;0
-25010;Lugaru HD;0;5.500000;0;2010;0;1;1;0
-27810;Gridrunner Revolution;0;5.500000;0;2010;0;1;0;0
 28000;Kane & Lynch 2: Dog Days;17;8.620000;0;2010;0;1;0;0
 29700;Guild Wars: Eye of the North®;0;9.620000;0;2010;0;1;0;0
 32450;LEGO® Indiana Jones™ 2: The Adventure Continues;0;9.620000;0;2010;0;1;0;0
-32460;Monkey Island™ 2 Special Edition: LeChuck’s Revenge™;0;5.500000;0;2010;0;1;0;0
 32470;STAR WARS™ Empire at War - Gold Pack;0;9.620000;0;2010;0;1;0;0
 32500;STAR WARS™: The Force Unleashed™ II;0;9.620000;0;2010;0;1;0;0
 33220;Tom Clancy's Splinter Cell Conviction™;17;16.120001;0;2010;0;1;0;0
@@ -389,7 +311,6 @@
 33230;Assassin's Creed 2;17;16.120001;0;2010;0;1;0;0
 33320;Prince of Persia: The Forgotten Sands™;0;8.000000;0;2010;0;1;0;0
 33670;Disciples III - Renaissance Steam Special Edition;0;7.190000;0;2010;0;1;0;0
-33760;The Search for Amelia Earhart;0;5.000000;0;2010;0;1;0;0
 33930;Arma 2: Operation Arrowhead;17;14.380000;0;2010;0;1;0;0
 33980;Pound of Ground;0;9.380000;0;2010;0;1;0;0
 33990;Alternativa;0;9.380000;0;2010;0;1;0;0
@@ -404,7 +325,6 @@
 38170;Cradle of Rome;0;6.880000;0;2010;0;1;0;0
 38180;Cradle of Persia;0;6.880000;0;2010;0;1;0;0
 38190;Romance of Rome;0;6.880000;0;2010;0;1;0;0
-38230;Hotel Giant 2;0;5.620000;0;2010;0;1;0;0
 38600;Faerie Solitaire;0;8.000000;0;2010;0;1;1;0
 39510;Gothic II: Gold Edition;0;6.880000;0;2010;0;1;0;0
 39650;The Guild II;0;6.880000;0;2010;0;1;0;0
@@ -417,7 +337,6 @@
 41014;Serious Sam HD: The Second Encounter;0;11.880000;0;2010;0;1;0;0
 41660;Tommy Tronic;0;6.880000;0;2010;0;1;0;0
 41700;S.T.A.L.K.E.R.: Call of Pripyat;0;11.880000;0;2010;0;1;0;0
-41730;Ion Assault;0;5.500000;0;2010;0;1;0;0
 42120;Lead and Gold: Gangs of the Wild West;17;7.340000;0;2010;0;1;0;0
 42670;Singularity™;0;28.620001;0;2010;0;1;0;0
 42700;Call of Duty®: Black Ops;17;37.490002;0;2010;0;1;0;0
@@ -428,10 +347,8 @@
 42980;Victoria I Complete;0;6.880000;0;2010;0;1;0;0
 43000;Front Mission Evolved;0;8.620000;0;2010;0;1;0;0
 43500;M.U.D. TV;0;7.190000;0;2010;0;1;0;0
-45000;Sol Survivor;0;5.500000;0;2010;0;1;0;0
 45300;Wings of Prey;0;6.880000;0;2010;0;1;0;0
 45740;Dead Rising® 2;17;17.209999;0;2010;0;1;0;0
-46250;NecroVisioN: Lost Company;0;5.000000;0;2010;0;1;0;0
 46450;Grotesque Tactics: Evil Heroes;0;6.880000;0;2010;0;1;0;0
 46700;Ironclads: American Civil War;0;6.880000;0;2010;0;1;0;0
 46710;Ironclads: High Seas;0;6.880000;0;2010;0;1;0;0
@@ -452,45 +369,30 @@
 48950;Greed Corp;0;6.880000;0;2010;0;1;0;0
 49300;Commander: Conquest of the Americas;0;6.880000;0;2010;0;1;0;0
 49600;Beat Hazard;0;6.880000;0;2010;0;1;1;0
-50000;Nimbus;0;5.500000;0;2010;0;1;0;0
-50910;Professor Fizzwizzle and the Molten Mystery;0;5.000000;0;2010;0;1;1;0
 50920;Hidden Expedition: Amazon;0;6.880000;0;2010;0;1;0;0
 50930;Hidden Expedition: Everest;0;6.880000;0;2010;0;1;0;0
 50940;Hidden Expedition: Titanic;0;6.880000;0;2010;0;1;0;0
 50960;Mystery Case Files: Huntsville™;0;6.880000;0;2010;0;1;0;0
-50980;Mystery Case Files: Prime Suspects™;0;5.000000;0;2010;0;1;0;0
 50990;Mystery Case Files: Ravenhearst®;0;6.880000;0;2010;0;1;0;0
 51000;Mystery Case Files: Return to Ravenhearst™;0;6.880000;0;2010;0;1;0;0
 51010;My Tribe;0;6.880000;0;2010;0;1;1;0
-51020;Unwell Mel;0;5.000000;0;2010;0;1;1;0
 51030;Atlantis Sky Patrol;0;6.880000;0;2010;0;1;1;0
-55000;Flotilla;0;5.500000;0;2010;0;1;1;0
-55020;Air Forte;0;5.500000;0;2010;0;1;1;0
 55140;MX vs. ATV Reflex;0;11.880000;0;2010;0;1;0;0
 57300;Amnesia: The Dark Descent;0;11.880000;0;2010;0;1;1;0
 57620;Patrician IV;0;10.940000;0;2010;0;1;0;0
-58200;Jolly Rover;0;5.500000;0;2010;0;1;1;0
 58520;Blood Bowl - Legendary Edition;0;6.880000;0;2010;0;1;0;0
-620;Portal 2;0;5.500000;0;2011;0;1;1;0
 2210;Quake 4;17;10.750000;0;2011;0;1;0;0
 7530;Two Worlds II Castle Defense;0;6.880000;0;2011;0;1;1;0
 9200;RAGE;17;8.250000;0;2011;0;1;0;0
 9350;Supreme Commander;0;9.380000;0;2011;0;1;0;0
 9420;Supreme Commander: Forged Alliance;0;9.380000;0;2011;0;1;0;0
 9970;Star Raiders;0;6.880000;0;2011;0;1;0;0
-10230;Dead Mountaineer's Hotel;0;5.620000;0;2011;0;1;0;0
-10240;A Stroke of Fate: Operation Valkyrie;0;5.000000;0;2011;0;1;0;0
-10250;PT Boats: Knights of the Sea;0;5.000000;0;2011;0;1;0;0
-10260;PT Boats: South Gambit;0;5.000000;0;2011;0;1;0;0
 12130;Manhunt;17;6.880000;0;2011;0;1;0;0
 15560;AaaaaAAaaaAAAaaAAAAaAAAAA!!! for the Awesome;0;6.880000;0;2011;0;1;0;0
-17710;Nuclear Dawn;0;5.500000;0;2011;0;1;1;0
 19680;Alice: Madness Returns;17;17.500000;0;2011;0;1;0;0
 21100;F.E.A.R. 3;17;17.500000;0;2011;0;1;0;0
-22230;Rock of Ages;0;5.500000;0;2011;0;1;0;0
 23530;Earth Defense Force: Insect Armageddon;0;6.620000;0;2011;0;1;0;0
 24240;PAYDAY™ The Heist;17;9.380000;0;2011;0;1;0;0
-24670;Trainz™ Simulator 12;0;5.500000;0;2011;0;1;0;0
 25808;Europa Universalis III: Divine Wind;0;6.880000;0;2011;0;1;0;0
 32510;LEGO® Star Wars™ III - The Clone Wars™;0;9.620000;0;2011;0;1;0;0
 33390;Zeit²;0;8.000000;0;2011;0;1;0;0
@@ -513,7 +415,6 @@
 46500;Syberia;0;8.620000;0;2011;0;1;1;0
 46510;Syberia II;0;8.620000;0;2011;0;1;1;0
 46550;Post Mortem;0;9.380000;0;2011;0;1;0;0
-46560;Robin Hood: The Legend of Sherwood;0;5.620000;0;2011;0;1;1;0
 46570;Grotesque Tactics 2 – Dungeons and Donuts;0;6.880000;0;2011;0;1;0;0
 46760;Ironclads: Schleswig War 1864;0;6.880000;0;2011;0;1;0;0
 46790;Armada 2526;0;8.000000;0;2011;0;1;0;0
@@ -529,7 +430,6 @@
 48720;Mount & Blade: With Fire & Sword;0;6.250000;0;2011;0;1;0;0
 49330;Pirates of Black Cove;0;6.880000;0;2011;0;1;0;0
 51060;Drawn®: The Painted Tower;0;6.880000;0;2011;0;1;0;0
-55040;Atom Zombie Smasher;0;5.500000;0;2011;0;1;1;0
 55100;Homefront;17;11.880000;0;2011;0;1;0;0
 55110;Red Faction®: Armageddon™;17;11.880000;0;2011;0;1;0;0
 55150;"Warhammer 40000: Space Marine - Anniversary Edition";17;50.000000;0;2011;0;1;0;0
@@ -544,7 +444,6 @@
 4720;Condemned: Criminal Origins;17;9.380000;0;2012;0;1;0;0
 4920;Natural Selection 2;0;6.880000;0;2012;0;1;0;0
 10220;Postal III;17;8.120000;0;2012;0;1;0;0
-18120;Unstoppable Gorg;0;5.500000;0;2012;0;1;1;0
 20920;The Witcher 2: Assassins of Kings Enhanced Edition;17;11.880000;0;2012;0;1;1;0
 24480;King Arthur II: The Role-Playing Wargame;0;6.880000;0;2012;0;1;0;0
 35320;Insane 2;0;8.000000;0;2012;0;1;0;0
@@ -555,7 +454,6 @@
 49520;Borderlands 2;17;11.880000;0;2012;0;1;1;0
 50300;Spec Ops: The Line;17;18.120001;0;2012;0;1;1;0
 57740;Jagged Alliance - Back in Action;17;11.880000;0;2012;0;1;1;0
-58230;MacGuffin's Curse;0;5.500000;0;2012;0;1;1;0
 2870;X Rebirth;0;18.120001;0;2013;0;1;1;0
 8870;BioShock Infinite;17;18.120001;0;2013;0;1;1;0
 34870;Sniper: Ghost Warrior 2;17;6.880000;0;2013;0;1;0;0
@@ -572,7 +470,6 @@
 45420;Land It!;0;6.880000;0;2016;0;1;1;0
 25000;Overgrowth;0;9.620000;0;2017;0;1;1;0
 16900;GROUND BRANCH;0;9.620000;0;2018;0;1;0;0
-1313;SiN: Gold;0;5.500000;0;2020;0;1;0;0
 12210;Grand Theft Auto IV: The Complete Edition;17;18.740000;0;2020;0;1;0;0
 7800;Stubbs the Zombie in Rebel Without a Pulse;17;9.620000;0;2021;0;1;0;0
 11550;Second Sight;0;6.880000;0;2021;0;1;0;0

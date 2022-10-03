@@ -1,11 +1,3 @@
-Año: 2000
-Juego más caro: Counter-Strike
-Juego más barato: Counter-Strike
-Promedio de precios: 5.500000
-Windows: 100 Mac: 100 Linux: 0
-Juegos gratis:
-
-
 Año: 2002
 Juego más caro: Mafia
 Juego más barato: Mafia
@@ -15,81 +7,73 @@ Juegos gratis:
 
 
 Año: 2004
-Juego más caro: Counter-Strike: Condition Zero
-Juego más barato: Counter-Strike: Condition Zero
-Promedio de precios: 5.500000
-Windows: 100 Mac: 100 Linux: 0
-Juegos gratis:
-
-
-Año: 2004
 Juego más caro: Unreal Tournament 2004: Editor's Choice Edition
-Juego más barato: Half-Life 2
-Promedio de precios: 6.470000
+Juego más barato: Unreal Tournament 2004: Editor's Choice Edition
+Promedio de precios: 9.380000
 Windows: 100 Mac: 0 Linux: 0
 Juegos gratis:
 
 
 Año: 2005
 Juego más caro: Sid Meier's Pirates!
-Juego más barato: Darwinia
-Promedio de precios: 6.126667
+Juego más barato: Sid Meier's Pirates!
+Promedio de precios: 6.440000
 Windows: 100 Mac: 0 Linux: 0
 Juegos gratis:
 
 
 Año: 2006
 Juego más caro: FlatOut 2™
-Juego más barato: Half-Life Deathmatch: Source
-Promedio de precios: 9.850691
+Juego más barato: Uplink
+Promedio de precios: 11.541821
 Windows: 100 Mac: 0 Linux: 0
 Juegos gratis:
 
 
 Año: 2007
 Juego más caro: Call of Duty® 4: Modern Warfare®
-Juego más barato: FlatOut
-Promedio de precios: 8.740975
+Juego más barato: CivCity: Rome
+Promedio de precios: 9.087223
 Windows: 100 Mac: 0 Linux: 0
 Juegos gratis:
 
 
 Año: 2008
 Juego más caro: Trackmania United Forever
-Juego más barato: Left 4 Dead
-Promedio de precios: 8.323764
+Juego más barato: City Life 2008
+Promedio de precios: 9.074626
 Windows: 100 Mac: 0 Linux: 0
 Juegos gratis:
 
 
 Año: 2009
 Juego más caro: Resident Evil 5
-Juego más barato: Sniper Elite
-Promedio de precios: 8.536768
+Juego más barato: Two Worlds Epic Edition
+Promedio de precios: 9.183190
 Windows: 100 Mac: 0 Linux: 0
 Juegos gratis:
 
 
 Año: 2010
 Juego más caro: F.E.A.R.
-Juego más barato: Day of Defeat: Source
-Promedio de precios: 9.601615
+Juego más barato: Azada
+Promedio de precios: 10.470682
 Windows: 100 Mac: 0 Linux: 0
 Juegos gratis:
 
 
 Año: 2011
 Juego más caro: "Warhammer 40000: Space Marine - Anniversary Edition"
-Juego más barato: Portal 2
-Promedio de precios: 9.643381
+Juego más barato: Two Worlds II Castle Defense
+Promedio de precios: 10.343281
 Windows: 100 Mac: 0 Linux: 0
 Juegos gratis:
 
 
 Año: 2012
-Juego más caro: Spec Ops: The Line
-Juego más barato: Unstoppable Gorg
-Promedio de precios: 10.064286
+Juego más caro: X Rebirth
+Juego más barato: Natural Selection 2
+Promedio de precios: 11.386154
 Windows: 100 Mac: 0 Linux: 0
 Juegos gratis:
 
@@ -97,7 +81,7 @@ Juegos gratis:
 Año: 2013
 Juego más caro: BioShock Infinite
 Juego más barato: Sniper: Ghost Warrior 2
-Promedio de precios: 11.805715
+Promedio de precios: 10.753334
 Windows: 100 Mac: 0 Linux: 0
 Juegos gratis:
 
@@ -143,17 +127,17 @@ Juegos gratis:
 
 
 Año: 2020
-Juego más caro: SiN: Gold
-Juego más barato: SiN: Gold
-Promedio de precios: 5.500000
+Juego más caro: Grand Theft Auto IV: The Complete Edition
+Juego más barato: Grand Theft Auto IV: The Complete Edition
+Promedio de precios: 18.740000
 Windows: 100 Mac: 0 Linux: 0
 Juegos gratis:
 
 
-Año: 2020
-Juego más caro: Grand Theft Auto IV: The Complete Edition
+Año: 2021
+Juego más caro: Stubbs the Zombie in Rebel Without a Pulse
 Juego más barato: Stubbs the Zombie in Rebel Without a Pulse
-Promedio de precios: 14.180000
+Promedio de precios: 9.620000
 Windows: 100 Mac: 0 Linux: 0
 Juegos gratis:
 

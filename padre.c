@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include "padre.h"
 
 // Funcion que crea una lista de juegos
@@ -174,6 +171,7 @@ int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n, float precioM
         return NULL;
     }
     int fechaActual = juego[0].fecha;
+    
     for (int j = 0; j < i-1; j++)
     {
         if(juego[j].precio >= precioMinimo){
