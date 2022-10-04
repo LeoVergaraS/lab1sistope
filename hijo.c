@@ -67,25 +67,24 @@ juego *listaDeJuegosHijo(int comienzo, int fin, int *i)
 //Calcula los promedios, el más caro y el más barato de los juegos por cada hijo
 //Entrada: lista de juegos, tamaño de la lista, punteros a los promedios, el más caro y el más barato
 //Salida: nada
-void calculosDelHijo(juego* juegos, int n, int *c, int *b, float *prom){
+void calculosDelHijo(juego* juegos, int n, int *c, int *b, float *prom, float precioMinimo, int contador){
     int caro = juegos[0].precio;
     int barato = juegos[0].precio;
     float suma = 0;
     for(int i=0 ;i<n;i++){
-        if(juegos[i].precio > caro){
+        if(juegos[i].precio > caro && juegos[i].precio >= precioMinimo){
             caro = juegos[i].precio;
             *c = i;
         }
-        else if(juegos[i].precio < barato){
+        else if(juegos[i].precio < barato && juegos[i].precio >= precioMinimo){
             barato = juegos[i].precio;
             *b = i;
         }
-        suma = suma + juegos[i].precio;
+        if(juegos[i].precio >= precioMinimo){
+            suma = suma + juegos[i].precio;
+        } 
     }
-    *prom = suma/n;
-    //printf("caro: %d, barato: %d, promedio: %f\n",caro,barato,*prom);
-    //sprintf(stringFinal, "%d;Año:%d\nJuego mas caro:%s\nJuego mas barato:%s\nPromedio de precios:%f\n",fecha,fecha,juegos[k].nombre,juegos[l].nombre,prom);
-
+    *prom = suma/contador;
     return ;
 
 }
@@ -93,28 +92,38 @@ void calculosDelHijo(juego* juegos, int n, int *c, int *b, float *prom){
 //Calcula la cobertura de cada plataforma por año
 //Entrada: lista de juegos, tamaño de la lista, punteros a los promedios, el más caro y el más barato
 //Salida: nada
-void promedioPorPlataforma(juego* juegos, int n, int *w, int *m, int *l){
+void promedioPorPlataforma(juego* juegos, int n, int *w, int *m, int *l, float precioMinimo, int contador){
     //printf("%d %d\n",juegos[1].fecha,juegos[1].win);
     int win = 0;
     int mac = 0;
     int lin = 0;
     for(int i=0 ;i<n;i++){
         //printf("%d %d\n",juegos[i].fecha,juegos[i].win);
-        if(juegos[i].win == 1){
+        if(juegos[i].win == 1 && juegos[i].precio >= precioMinimo){
             win++;
         }
-        if(juegos[i].mac == 1){
+        if(juegos[i].mac == 1 && juegos[i].precio >= precioMinimo){
             mac++;
         }
-        if(juegos[i].lin == 1){
+        if(juegos[i].lin == 1 && juegos[i].precio >= precioMinimo){
             lin++;
         }
     }
-    *w = (win/n)*100;
-    *m = (mac/n)*100;
-    *l = (lin/n)*100;
+    *w = (win/contador)*100;
+    *m = (mac/contador)*100;
+    *l = (lin/contador)*100;
     //sprintf(stringFinal, "Windows: %f%% Mac: %f%% Linux: %f%%\n", w, m, l);
     return;
+}
+
+int contadorJuegosPrecioMinimo(juego* juegos, int n, int precioMinimo){
+    int contador = 0;
+    for(int i=0;i<n;i++){
+        if(juegos[i].precio >= precioMinimo){
+            contador++;
+        }  
+    }
+    return contador;
 }
 
 

@@ -6,7 +6,7 @@
 juego *nuevoJuego();
 int transformarStringABool(char *cadena);
 juego *listaDeJuegos(char *nombreArchivo, int *i);
-int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n, float precioMinimo);
+int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n);
 void merge(juego* juegos,int inicio,int medio,int fin);
 void mergeSort(juego* juegos, int ini, int fin);
 int* agregarCabecera(int* anios, int anio, int *n);

@@ -24,7 +24,7 @@ int main(int argc, char *argv[]){
 	char nombreSalida[255];
 	int anioInicio;
 	float precioMinimo=0;
-	int bandera = 0;
+	int bandera =0;
 
 	while ((option = getopt(argc, argv, ":i:o:d:p:b")) != -1){
 		switch (option){
@@ -62,8 +62,8 @@ int main(int argc, char *argv[]){
 	// Se crea el archivo intermedio.
 	int cantidadAnios = 0;
 	char *archivoIntermedio = "intermedio.txt";
-	int *cabeceras = escribirJuego(archivoIntermedio, listaJuegos, cantidadJuegos, &cantidadAnios, precioMinimo);
-	//printf("%d\n",cantidadAnios);
+	int *cabeceras = escribirJuego(archivoIntermedio, listaJuegos, cantidadJuegos, &cantidadAnios);
+	
 	// Se genera un arreglo para almacenar los pids de cada proceso generado
 	int pids[cantidadAnios];
 	// Se definen un pipes para la comunicacion entre proceso padre y sus hijos
@@ -109,40 +109,31 @@ int main(int argc, char *argv[]){
 				return 0;
 			}else{
 				sscanf(buffer, "%d;%d", &posicionInicial, &posicionFinal);
-				// proceso hijo recibe el mensaje del padre
-				// Acá se le pasan las cabeceras a los procesos hijos
-				// Se calcula la información segun las cabeceras posicionInicial y posicionFinal;
-				int cantidadJuegosPorAnio = 0, cantidadGratis = 0;
+				int cantidadJuegosPorAnio = 0;
 				juego *juegosPorAnio = listaDeJuegosHijo(posicionInicial, posicionFinal, &cantidadJuegosPorAnio);
-
-				int caro, barato, win, mac, lin;
-				float promedio;
-				//printf("anio: %d\n",juegosPorAnio[0].fecha);
-				calculosDelHijo(juegosPorAnio, cantidadJuegosPorAnio, &caro, &barato, &promedio);
-				//printf("cantidad %d anio %d bara %d, caro %d, promedio %f\n", cantidadJuegosPorAnio, juegosPorAnio[0].fecha, barato, caro, promedio);
-				promedioPorPlataforma(juegosPorAnio, cantidadJuegosPorAnio, &win, &mac, &lin);
-				//printf("anio %d win: %d, mac: %d, lin: %d\n", juegosPorAnio[0].fecha,win, mac, lin);
-				//gratis=listaJuegosGratis(juegosPorAnio, cantidadJuegosPorAnio, &cantidadGratis, gratis);
-				 //printf("%d.- gratis: \n", juegosPorAnio[0].fecha);
-				/*for(int j=0;j<cantidadGratis;j++){
-				printf("%s\n", juegosPorAnio[gratis[j]].nombre);
-				} */
+				int contador = contadorJuegosPrecioMinimo(juegosPorAnio, cantidadJuegosPorAnio, precioMinimo);
 				char* bufferHijo = malloc(sizeof(char) * 5000);
-				sprintf(bufferHijo, "%d;Año: %d\nJuego más caro: %s\nJuego más barato: %s\nPromedio de precios: %f\nWindows: %d Mac: %d Linux: %d\n",juegosPorAnio[0].fecha, juegosPorAnio[0].fecha, juegosPorAnio[caro].nombre, juegosPorAnio[barato].nombre, promedio, win, mac, lin);
-				//sprintf(bufferHijo, "%sJuegos gratis:\n", bufferHijo);
-				strcat(bufferHijo, "Juegos gratis:\n");
-				for(int j=0;j<cantidadJuegosPorAnio;++j){
-					if(juegosPorAnio[j].gratis == 1){
-						strcat(bufferHijo, juegosPorAnio[j].nombre);
-						strcat(bufferHijo, "\n");
-						//sprintf(bufferHijo, "%s%s\n", bufferHijo, juegosPorAnio[j].nombre);
-        			}
+				//Si contador es 0, no hay juegos con precio mayor al minimo, por lo tanto se escribe solo los parámetros del año sin juegos, 
+				//ni siquiera los juegos gratis
+				if(contador==0){
+					sprintf(bufferHijo, "%d;Año: %d\nJuego más caro:\nJuego más barato:\nPromedio de precios:\nWindows: 0 Mac: 0 Linux:0 \n",
+					juegosPorAnio[0].fecha, juegosPorAnio[0].fecha);
+					strcat(bufferHijo, "Juegos gratis:\n");		
+				}else{
+					int caro, barato, win, mac, lin;
+					float promedio;
+					calculosDelHijo(juegosPorAnio, cantidadJuegosPorAnio, &caro, &barato, &promedio,precioMinimo,contador);
+					promedioPorPlataforma(juegosPorAnio, cantidadJuegosPorAnio, &win, &mac, &lin,precioMinimo,contador);
+					sprintf(bufferHijo, "%d;Año: %d\nJuego más caro: %s\nJuego más barato: %s\nPromedio de precios: %f\nWindows: %d Mac: %d Linux: %d\n",
+					juegosPorAnio[0].fecha, juegosPorAnio[0].fecha, juegosPorAnio[caro].nombre, juegosPorAnio[barato].nombre, promedio, win, mac, lin);
+					strcat(bufferHijo, "Juegos gratis:\n");
+					for(int j=0;j<cantidadJuegosPorAnio;++j){
+						if(juegosPorAnio[j].gratis == 1){
+							strcat(bufferHijo, juegosPorAnio[j].nombre);
+							strcat(bufferHijo, "\n");
+        				}
+					}
 				}
-				//printf("%d\n",cantidadGratis);
-				for(int j=0;j<cantidadGratis;j++){
-					//printf( "anio:%d, %d\n",juegosPorAnio[0].fecha,gratis[i]);
-				}
-				//printf("%s\n",bufferHijo);
 				if (write(pipesHP[i][WRITE], bufferHijo, sizeof(char) * 5000) == -1){
 					printf("estoy en el error\n");
 					return 0;
@@ -166,7 +157,6 @@ int main(int argc, char *argv[]){
 		return 0;
 	}
 	}
-	// Se espera a que terminen los procesos hijos
 	FILE* archivoSalida = fopen(nombreSalida, "w");
 	fclose(archivoSalida);
 	for (i = 0; i < cantidadAnios; i++){
@@ -176,7 +166,6 @@ int main(int argc, char *argv[]){
 			printf("Error en la lectura del pipe\n");
 			return 0;
 		}else{
-			//printf("Bandera %d\n",bandera);
 			char *token = strtok(bufferTotal, ";");
 			aniosLista = atoi(token);
 			
@@ -187,29 +176,8 @@ int main(int argc, char *argv[]){
 				}
 				escribirArchivoFinal(token,nombreSalida);
 			}
-			
-			// token = strtok(NULL, ";");
-			// strcpy(listaLineas[i], token);
 		}
 	}
-
-	/*mergeSort2(aniosLista, 0, cantidadAnios);
-	for(int i=0;i<cantidadAnios;i++){
-		printf("%d\n", aniosLista[i]);
-	}*/
-
-	
-	// Acá se le pasan las cabeceras a los procesos hijos
-
-	// printf("%s", bufferTotal);
-// string = "1999;Anio 1999:\n Juego mas caro"
-// 	// strtok separa 2 datos por ;
-// 	// guardamos los dos datos en 2 array distintos
-// 	//[1999,1997,2000,2001]
-// 	//["s1",s2]
-// 	// ordenamos array de anios, y a la vez movemos los datos de el otro array
-// 	// se escri
-
 free(listaJuegos);
 return 0;
 }

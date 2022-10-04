@@ -91,6 +91,7 @@ juego *listaDeJuegos(char *nombreArchivo, int *i)
                     {
                         token = strtok(NULL, ",");
                         strcpy(copia, token);
+                        strcat(lista[j].nombre, ",");
                         strcat(lista[j].nombre, copia);           
                         resto--;
                     }
@@ -160,7 +161,7 @@ int* agregarCabecera(int* cabeceras, int cabecera, int *n){
 // Función que escribe el juego
 // Entrada: Estructura juego
 // Salida: void
-int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n, float precioMinimo)
+int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n)
 {
     int * cabeceras= (int*)malloc(sizeof(int)*(*n));
     int len;
@@ -174,7 +175,6 @@ int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n, float precioM
     
     for (int j = 0; j < i-1; j++)
     {
-        if(juego[j].precio >= precioMinimo){
             fprintf(archivo, "%d;%s;%d;%f;%d;%d;%d;%d;%d;%d\n", juego[j].id, juego[j].nombre, juego[j].restriccion, juego[j].precio, juego[j].proximamente, juego[j].fecha, juego[j].gratis, juego[j].win, juego[j].mac, juego[j].lin);
             len = ftell(archivo);
 
@@ -188,7 +188,6 @@ int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n, float precioM
                 break;
                 }
             }
-        }   
     }
         
     fclose(archivo);
