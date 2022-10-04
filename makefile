@@ -10,4 +10,4 @@ hijo.o: hijo.c
 	gcc -c $(FLAGS) hijo.c
 
 clear:
-	rm -f *.o main
+	rm -f *.o lab1
