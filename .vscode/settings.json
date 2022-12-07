@@ -2,6 +2,7 @@
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
         "mer2": "c",
-        "juego.h": "c"
+        "juego.h": "c",
+        "hijo.h": "c"
     }
 }

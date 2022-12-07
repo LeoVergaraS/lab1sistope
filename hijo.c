@@ -44,25 +44,25 @@ juego *listaDeJuegosHijo(int comienzo, int fin, int *i)
         //Se lee cada linea del archivo
         fgets(linea, 2000, archivo);
         //tokenizamos la linea
-        char *token = strtok(linea, ";");
+        char *token = strtok(linea, ",");
         lista[j].id = atoi(token);
-        token = strtok(NULL, ";");
+        token = strtok(NULL, ",");
         strcpy(lista[j].nombre, token);
-        token = strtok(NULL, ";");
+        token = strtok(NULL, ",");
         lista[j].restriccion = atoi(token);
-        token = strtok(NULL, ";");
+        token = strtok(NULL, ",");
         lista[j].precio = atof(token);
-        token = strtok(NULL, ";");
+        token = strtok(NULL, ",");
         lista[j].proximamente = atoi(token);
-        token = strtok(NULL, ";");
+        token = strtok(NULL, ",");
         lista[j].fecha = atoi(token);
-        token = strtok(NULL, ";");
+        token = strtok(NULL, ",");
         lista[j].gratis = atoi(token);
-        token = strtok(NULL, ";");
+        token = strtok(NULL, ",");
         lista[j].win = atoi(token);
-        token = strtok(NULL, ";");
+        token = strtok(NULL, ",");
         lista[j].mac = atoi(token);
-        token = strtok(NULL, ";");
+        token = strtok(NULL, ",");
         lista[j].lin = atoi(token);
         j++;
     }
@@ -98,7 +98,7 @@ void calculosDelHijo(juego* juegos, int n, int *c, int *b, float *prom, float pr
         } 
     }
     //Se calcula el promedio
-    *prom = suma/contador;
+    *prom = (float)suma/(float)contador;
     return ;
 
 }
@@ -107,7 +107,7 @@ void calculosDelHijo(juego* juegos, int n, int *c, int *b, float *prom, float pr
 //Entrada: lista de juegos, tamaño de la lista, punteros a los porcentaje de cada plataforma,
 //         el precio minimo y cantidad de juegos mayor al precio minimo.
 //Salida: nada
-void promedioPorPlataforma(juego* juegos, int n, int *w, int *m, int *l, float precioMinimo, int contador){
+void promedioPorPlataforma(juego* juegos, int n, float *w, float *m, float *l, float precioMinimo, int contador){
     //Se inicializan los contadores de cada plataforma
     int win = 0;
     int mac = 0;
@@ -125,9 +125,9 @@ void promedioPorPlataforma(juego* juegos, int n, int *w, int *m, int *l, float p
         }
     }
     //Se calcula el porcentaje de cada plataforma
-    *w = (win/contador)*100;
-    *m = (mac/contador)*100;
-    *l = (lin/contador)*100;
+    *w = ((float)win/(float)contador)*100;
+    *m = ((float)mac/(float)contador)*100;
+    *l = ((float)lin/(float)contador)*100;
     return;
 }
 

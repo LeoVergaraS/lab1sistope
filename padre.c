@@ -15,7 +15,7 @@ juego *nuevoJuego()
 int transformarStringABool(char *cadena)
 {
     // Si es Yes o True, retorna 1
-    if (strcmp(cadena, "Yes") == 0 || strcmp(cadena, "True") == 0)
+    if (cadena[0]=='Y'|| cadena[0]=='T')
     {
         return 1;
     }
@@ -40,9 +40,9 @@ juego *listaDeJuegos(char *nombreArchivo, int *i)
         printf("No se pudo abrir el archivo");
         return NULL;
     }
-    char linea[255];
+    char linea[1000];
     //Se cuentan las lineas del archivo
-    while (fgets(linea, 255, archivo) != NULL)
+    while (fgets(linea, 1000, archivo) != NULL)
     {
         //Se cuenta cada linea
         *i = *i + 1;
@@ -63,7 +63,7 @@ juego *listaDeJuegos(char *nombreArchivo, int *i)
         // Se inicializa un contador de comas
         int contador = 0;
         // Se lee la linea del archivo
-        fgets(linea, 255, archivo);
+        fgets(linea, 1000, archivo);
         // Se cuenta la cantidad de comas en la linea
         for (int k = 0; k < strlen(linea); k++)
         {
@@ -204,7 +204,7 @@ int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n)
     for (int j = 0; j < i-1; j++)
     {
             // Se escribe el juego en el archivo
-            fprintf(archivo, "%d;%s;%d;%f;%d;%d;%d;%d;%d;%d\n", juego[j].id, juego[j].nombre, juego[j].restriccion, juego[j].precio, juego[j].proximamente, juego[j].fecha, juego[j].gratis, juego[j].win, juego[j].mac, juego[j].lin);
+            fprintf(archivo, "%d,%s,%d,%f,%d,%d,%d,%d,%d,%d\n", juego[j].id, juego[j].nombre, juego[j].restriccion, juego[j].precio, juego[j].proximamente, juego[j].fecha, juego[j].gratis, juego[j].win, juego[j].mac, juego[j].lin);
             // Se guarda la posición de la cabecera
             len = ftell(archivo);
 
@@ -215,7 +215,7 @@ int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n)
             fechaActual = juego[j+1].fecha;
             // Si es la ultima tupla se guarda su posicion en la cabecera
             if(j+1 == i-1){
-                fprintf(archivo, "%d;%s;%d;%f;%d;%d;%d;%d;%d;%d\n", juego[j+1].id, juego[j+1].nombre, juego[j+1].restriccion, juego[j+1].precio, juego[j+1].proximamente, juego[j+1].fecha, juego[j+1].gratis, juego[j+1].win, juego[j+1].mac, juego[j+1].lin);
+                fprintf(archivo, "%d,%s,%d,%f,%d,%d,%d,%d,%d,%d\n", juego[j+1].id, juego[j+1].nombre, juego[j+1].restriccion, juego[j+1].precio, juego[j+1].proximamente, juego[j+1].fecha, juego[j+1].gratis, juego[j+1].win, juego[j+1].mac, juego[j+1].lin);
                 len = ftell(archivo);
                 cabeceras = agregarCabecera(cabeceras, len, &(*n));
                 break;

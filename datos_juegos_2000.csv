@@ -144,8 +144,8 @@
 4520,Full Spectrum Warrior,0,6.88,False,2007,False,Yes,No,No
 4530,Full Spectrum Warrior: Ten Hammers,0,6.88,False,2007,False,Yes,No,No
 4560,Company of Heroes - Legacy Edition,17,11.88,False,2007,False,Yes,No,No
-4570,"Warhammer® 40,000: Dawn of War® - Game of the Year Edition",17,8.62,False,2007,False,Yes,No,No
-4580,"Warhammer® 40,000: Dawn of War® - Dark Crusade",17,8.62,False,2007,False,Yes,No,No
+4570,"Warhammer® 40.000: Dawn of War® - Game of the Year Edition",17,8.62,False,2007,False,Yes,No,No
+4580,"Warhammer® 40.000: Dawn of War® - Dark Crusade",17,8.62,False,2007,False,Yes,No,No
 4700,Total War: MEDIEVAL II – Definitive Edition,0,14.75,False,2006,False,Yes,Yes,Yes
 4720,Condemned: Criminal Origins,17,9.38,False,2012,False,Yes,No,No
 4760,Rome: Total War™ - Collection,0,0.0,False,2007,False,Yes,No,No
@@ -163,7 +163,7 @@
 6020,STAR WARS™ Jedi Knight - Jedi Academy™,0,5.5,False,2009,False,Yes,Yes,No
 6030,STAR WARS™ Jedi Knight II - Jedi Outcast™,0,5.5,False,2009,False,Yes,Yes,No
 6040,The Dig®,0,3.5,False,2009,False,Yes,Yes,No
-6060,"Star Wars: Battlefront 2 (Classic, 2005)",0,5.5,False,2009,False,Yes,No,No
+6060,"Star Wars: Battlefront 2 (Classic. 2005)",0,5.5,False,2009,False,Yes,No,No
 6080,Thrillville®: Off the Rails™,0,5.5,False,2009,False,Yes,No,No
 6090,Armed and Dangerous®,0,3.5,False,2009,False,Yes,No,No
 6120,Shank,17,5.5,False,2010,False,Yes,Yes,Yes
@@ -197,8 +197,8 @@
 7020,Rogue Trooper,0,6.88,False,2007,False,Yes,No,No
 7110,Jade Empire™: Special Edition,0,13.75,False,2007,False,Yes,No,No
 7200,Trackmania United Forever,0,24.88,False,2008,False,Yes,No,No
-7210,"Runaway, A Road Adventure",0,3.74,False,2007,False,Yes,No,No
-7220,"Runaway, The Dream of The Turtle",0,3.74,False,2007,False,Yes,No,No
+7210,"Runaway. A Road Adventure",0,3.74,False,2007,False,Yes,No,No
+7220,"Runaway. The Dream of The Turtle",0,3.74,False,2007,False,Yes,No,No
 7260,Loki,0,6.88,False,2007,False,Yes,No,No
 7340,Azada,0,6.88,False,2010,False,Yes,No,No
 7510,X-Blades,17,6.88,False,2009,False,Yes,Yes,Yes
@@ -240,11 +240,11 @@
 9060,HeXen II,0,3.75,False,2007,False,Yes,No,No
 9180,Commander Keen,0,3.75,False,2007,False,Yes,No,No
 9200,RAGE,17,8.25,False,2011,False,Yes,No,No
-9310,"Warhammer® 40,000: Dawn of War® – Winter Assault",17,8.62,False,2007,False,Yes,No,No
+9310,"Warhammer® 40.000: Dawn of War® – Winter Assault",17,8.62,False,2007,False,Yes,No,No
 9340,Company of Heroes: Opposing Fronts,18,11.88,False,2007,False,Yes,No,No
 9350,Supreme Commander,0,9.38,False,2011,False,Yes,No,No
 9420,Supreme Commander: Forged Alliance,0,9.38,False,2011,False,Yes,No,No
-9450,"Warhammer® 40,000: Dawn of War® - Soulstorm",17,8.62,False,2008,False,Yes,No,No
+9450,"Warhammer® 40.000: Dawn of War® - Soulstorm",17,8.62,False,2008,False,Yes,No,No
 9460,Frontlines™: Fuel of War™,0,11.88,False,2008,False,Yes,No,No
 9480,Saints Row 2,17,6.88,False,2009,False,Yes,No,Yes
 9500,Gish,0,5.5,False,2007,False,Yes,Yes,No
@@ -375,7 +375,7 @@
 15500,The Wonderful End of the World,0,6.88,False,2008,False,Yes,No,No
 15520,AaAaAA!!! - A Reckless Disregard for Gravity,0,6.88,False,2009,False,Yes,No,No
 15560,AaaaaAAaaaAAAaaAAAAaAAAAA!!! for the Awesome,0,6.88,False,2011,False,Yes,No,Yes
-15620,"Warhammer 40,000: Dawn of War II",17,11.88,False,2009,False,Yes,Yes,Yes
+15620,"Warhammer 40.000: Dawn of War II",17,11.88,False,2009,False,Yes,Yes,Yes
 15700,Oddworld: Abe's Oddysee®,0,2.25,False,2008,False,Yes,No,No
 15710,Oddworld: Abe's Exoddus®,0,2.25,False,2008,False,Yes,No,No
 15740,Oddworld: Munch's Oddysee,0,3.75,False,2010,False,Yes,No,No
@@ -419,12 +419,12 @@
 17470,Dead Space,0,17.5,False,2009,False,Yes,No,No
 17480,Command & Conquer: Red Alert 3,0,17.5,False,2009,False,Yes,No,No
 17500,Zombie Panic! Source,0,0.0,False,2008,True,Yes,No,Yes
-17570,"Pirates, Vikings, and Knights II",0,0.0,False,2010,True,Yes,No,Yes
+17570,"Pirates. Vikings. and Knights II",0,0.0,False,2010,True,Yes,No,Yes
 17580,Dystopia,0,0.0,False,2009,True,Yes,No,Yes
 17710,Nuclear Dawn,0,5.5,False,2011,False,Yes,Yes,Yes
 17740,Empires Mod,0,0.0,False,2008,True,Yes,No,Yes
-18000,"Precipice of Darkness, Episode One",17,0.0,False,2008,False,Yes,No,No
-18020,"Precipice of Darkness, Episode Two",17,0.0,False,2008,False,Yes,No,No
+18000,"Precipice of Darkness. Episode One",17,0.0,False,2008,False,Yes,No,No
+18020,"Precipice of Darkness. Episode Two",17,0.0,False,2008,False,Yes,No,No
 18040,DeathSpank,0,13.75,False,2010,False,Yes,Yes,No
 18050,DeathSpank: Thongs of Virtue,0,8.0,False,2010,False,Yes,Yes,No
 18070,The Baconing,0,0.0,False,2011,False,Yes,Yes,No
@@ -458,7 +458,7 @@
 20530,Red Faction,0,6.88,False,2009,False,Yes,No,No
 20540,Company of Heroes: Tales of Valor,17,11.88,False,2009,False,Yes,No,No
 20550,Red Faction II,0,6.88,False,2009,False,Yes,No,No
-20570,"Warhammer® 40,000: Dawn of War® II Chaos Rising",17,11.88,False,2010,False,Yes,Yes,Yes
+20570,"Warhammer® 40.000: Dawn of War® II Chaos Rising",17,11.88,False,2010,False,Yes,Yes,Yes
 20700,Starscape,0,5.5,False,2008,False,Yes,No,No
 20710,Mr. Robot,0,5.5,False,2008,False,Yes,No,No
 20820,Shatter,0,1.25,False,2010,False,Yes,Yes,Yes
@@ -584,7 +584,7 @@
 31840,Nancy Drew®: Danger on Deception Island,0,4.12,False,2009,False,Yes,No,No
 31850,Nancy Drew®: Ghost Dogs of Moon Lake,0,4.12,False,2009,False,Yes,No,No
 31860,Nancy Drew®: Legend of the Crystal Skull,0,4.12,False,2009,False,Yes,No,No
-31870,"Nancy Drew® Dossier: Lights, Camera, Curses!",0,4.12,False,2009,False,Yes,No,No
+31870,"Nancy Drew® Dossier: Lights. Camera. Curses!",0,4.12,False,2009,False,Yes,No,No
 31880,Nancy Drew®: Secret of the Old Clock,0,4.12,False,2009,False,Yes,No,No
 31890,Nancy Drew®: Secret of the Scarlet Hand,0,4.12,False,2009,False,Yes,No,No
 31900,Nancy Drew®: The Creature of Kapu Cave,0,4.12,False,2009,False,Yes,No,No
@@ -739,7 +739,7 @@
 37370,TriJinx: A Kristine Kross Mystery™,0,0.0,False,2010,False,Yes,Yes,No
 37380,Valerie Porter and the Scarlet Scandal™,0,0.0,False,2010,False,Yes,Yes,No
 37390,Gemini Lost™,0,0.0,False,2010,False,Yes,Yes,No
-37400,"Time Gentlemen, Please! and Ben There, Dan That! Special Edition  Double Pack",0,3.75,False,2009,False,Yes,No,No
+37400,"Time Gentlemen. Please! and Ben There. Dan That! Special Edition  Double Pack",0,3.75,False,2009,False,Yes,No,No
 37500,Magnetis ,0,0.0,False,2009,False,Yes,No,No
 37600,Windosill,0,1.88,False,2009,False,Yes,Yes,No
 37800,Quantz,0,5.5,False,2009,False,Yes,Yes,No
@@ -975,9 +975,9 @@
 55100,Homefront,17,11.88,False,2011,False,Yes,No,No
 55110,Red Faction®: Armageddon™,17,11.88,False,2011,False,Yes,No,No
 55140,MX vs. ATV Reflex,0,11.88,False,2010,False,Yes,No,No
-55150,"Warhammer 40,000: Space Marine - Anniversary Edition",17,50.0,False,2011,False,Yes,No,No
+55150,"Warhammer 40.000: Space Marine - Anniversary Edition",17,50.0,False,2011,False,Yes,No,No
 55230,Saints Row: The Third,17,6.88,False,2011,False,Yes,No,Yes
-56437,"Warhammer 40,000: Dawn of War II: Retribution",17,18.12,False,2011,False,Yes,Yes,Yes
+56437,"Warhammer 40.000: Dawn of War II: Retribution",17,18.12,False,2011,False,Yes,Yes,Yes
 56438,Dawn of War II: Retribution – The Last Stand,0,6.88,False,2011,False,Yes,Yes,Yes
 57000,NyxQuest: Kindred Spirits,0,2.25,False,2010,False,Yes,Yes,No
 57200,Puzzle Dimension,0,2.25,False,2010,False,Yes,Yes,No
@@ -1374,7 +1374,7 @@
 207380,eXceed 2nd - Vampire REX,0,4.38,False,2012,False,Yes,No,No
 207400,eXceed 3rd - Jade Penetrate Black Package,0,4.38,False,2012,False,Yes,No,No
 207420,Wizorb,0,2.25,False,2012,False,Yes,Yes,Yes
-207430,"Hack, Slash, Loot",0,4.12,False,2012,False,Yes,Yes,Yes
+207430,"Hack. Slash. Loot",0,4.12,False,2012,False,Yes,Yes,Yes
 207490,Rayman® Origins,0,16.12,False,2012,False,Yes,No,No
 207530,Noitu Love 2: Devolution,0,3.0,False,2012,False,Yes,No,No
 207570,English Country Tune,0,3.0,False,2012,False,Yes,Yes,Yes
@@ -1591,7 +1591,7 @@
 221830,The Book of Unwritten Tales: The Critter Chronicles,0,11.88,False,2012,False,Yes,Yes,Yes
 221910,The Stanley Parable,0,9.38,False,2013,False,Yes,Yes,Yes
 222140,Puddle,0,5.62,False,2012,False,Yes,Yes,Yes
-222160,"Hamlet or the Last Game without MMORPG Features, Shaders and Product Placement",0,3.0,False,2012,False,Yes,No,No
+222160,"Hamlet or the Last Game without MMORPG Features. Shaders and Product Placement",0,3.0,False,2012,False,Yes,No,No
 222180,Mushroom Men: Truffle Trouble,0,2.25,False,2015,False,Yes,No,No
 222420,THE KING OF FIGHTERS '98 ULTIMATE MATCH FINAL EDITION,0,9.38,False,2014,False,Yes,No,No
 222440,THE KING OF FIGHTERS 2002 UNLIMITED MATCH,0,9.38,False,2015,False,Yes,No,No
@@ -1680,7 +1680,7 @@
 227400,Darkfall Unholy Wars,18,0.0,False,2013,False,Yes,No,No
 227480,God Mode,17,0.0,False,2013,False,Yes,No,No
 227560,Scourge: Outbreak,17,3.5,False,2014,False,Yes,Yes,No
-227580,"10,000,000",0,3.75,False,2013,False,Yes,Yes,Yes
+227580,"10.000.000",0,3.75,False,2013,False,Yes,Yes,Yes
 227600,Castle of Illusion,0,9.38,False,2013,False,Yes,No,No
 227760,March of the Eagles,0,11.88,False,2013,False,Yes,No,No
 227780,Serious Sam Classics: Revolution,0,6.88,False,2019,False,Yes,No,No
@@ -1851,7 +1851,7 @@
 238910,Bionic Dues,0,5.5,False,2013,False,Yes,Yes,Yes
 238930,7 Grand Steps: What Ancients Begat,0,11.88,False,2013,False,Yes,Yes,No
 238960,Path of Exile,0,0.0,False,2013,True,Yes,Yes,No
-239030,"Papers, Please",0,5.5,False,2013,False,Yes,Yes,Yes
+239030,"Papers. Please",0,5.5,False,2013,False,Yes,Yes,Yes
 239070,Hammerwatch,0,6.88,False,2013,False,Yes,Yes,Yes
 239090,Samurai Gunn,0,9.38,False,2013,False,Yes,No,No
 239120,Final Fantasy III (3D Remake),0,13.75,False,2014,False,Yes,No,No
@@ -1902,7 +1902,7 @@
 242820,140,0,3.75,False,2013,False,Yes,Yes,Yes
 242840,In Verbis Virtus,0,11.88,False,2015,False,Yes,No,No
 242860,Verdun,0,9.62,False,2015,False,Yes,Yes,Yes
-242880,"Sir, You Are Being Hunted",0,11.88,False,2014,False,Yes,No,Yes
+242880,"Sir. You Are Being Hunted",0,11.88,False,2014,False,Yes,No,Yes
 242920,Banished,0,11.88,False,2014,False,Yes,No,No
 242940,Anachronox,13,6.0,False,2013,False,Yes,No,No
 242960,Blood Omen 2: Legacy of Kain,17,6.0,False,2013,False,Yes,No,No
@@ -1922,7 +1922,7 @@
 243800,Gas Guzzlers Extreme,0,11.88,False,2013,False,Yes,No,No
 243930,Bound By Flame,0,4.99,False,2014,False,Yes,No,Yes
 243950,Divinity: Dragon Commander,0,22.88,False,2013,False,Yes,No,No
-243970,"Invisible, Inc.",0,9.62,False,2015,False,Yes,Yes,Yes
+243970,"Invisible. Inc.",0,9.62,False,2015,False,Yes,Yes,Yes
 244030,Take On Mars,0,21.12,False,2017,False,Yes,No,No
 244050,Rise of Flight United,0,0.0,False,2013,True,Yes,No,No
 244070,Sid Meier’s Ace Patrol,0,3.75,False,2013,False,Yes,No,No
@@ -1952,7 +1952,7 @@
 245280,ENSLAVED™: Odyssey to the West™ Premium Edition,0,11.88,False,2013,False,Yes,No,No
 245300,Disney Epic Mickey 2:  The Power of Two,0,9.62,False,2014,False,Yes,No,No
 245370,Etherium,0,6.88,False,2015,False,Yes,No,No
-245390,"I Have No Mouth, and I Must Scream",0,4.38,False,2013,False,Yes,Yes,Yes
+245390,"I Have No Mouth. and I Must Scream",0,4.38,False,2013,False,Yes,Yes,Yes
 245410,Wizardry 6: Bane of the Cosmic Forge,0,3.75,False,2013,False,Yes,Yes,Yes
 245430,Wizardry 7: Crusaders of the Dark Savant,0,3.75,False,2013,False,Yes,Yes,Yes
 245450,Wizardry 8,0,6.88,False,2013,False,Yes,Yes,No
@@ -1978,7 +1978,7 @@
 246960,Giana Sisters: Twisted Dreams - Rise of the Owlverlord,0,3.75,False,2013,False,Yes,No,No
 246980,InFlux,0,5.5,False,2013,False,Yes,No,No
 247000,Talisman: Digital Edition,0,4.12,False,2014,False,Yes,Yes,No
-247020,"Cook, Serve, Delicious!",0,6.88,False,2013,False,Yes,Yes,Yes
+247020,"Cook. Serve. Delicious!",0,6.88,False,2013,False,Yes,Yes,Yes
 247080,Crypt of the NecroDancer,0,9.38,False,2015,False,Yes,Yes,Yes
 247140,Soundodger+,0,5.62,False,2013,False,Yes,No,No
 247240,Volgarr the Viking,0,6.88,False,2013,False,Yes,Yes,Yes
