@@ -334,3 +334,11 @@ Windows: 100.000000 Mac: 22.222223 Linux: 33.333336
 Juegos gratis:
 
 
+Año: 2022
+Juego más caro: GearCity
+Juego más barato: Re-Volt
+Promedio de precios: 9.253333
+Windows: 100.000000 Mac: 33.333336 Linux: 33.333336
+Juegos gratis:
+
+

@@ -201,7 +201,7 @@ int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n)
     int fechaActual = juego[0].fecha;
     
     // Se recorre la lista de juegos
-    for (int j = 0; j < i-1; j++)
+    for (int j = 0; j <=i-1; j++)
     {
             // Se escribe el juego en el archivo
             fprintf(archivo, "%d,%s,%d,%f,%d,%d,%d,%d,%d,%d\n", juego[j].id, juego[j].nombre, juego[j].restriccion, juego[j].precio, juego[j].proximamente, juego[j].fecha, juego[j].gratis, juego[j].win, juego[j].mac, juego[j].lin);
@@ -210,16 +210,9 @@ int* escribirJuego(char *nombreSalida, juego *juego, int i,int *n)
 
             // Se compara la fecha del juego siguiente con la fecha actual
             if(juego[j+1].fecha != fechaActual){
-            // Se guarda la cabecera y se cambia la fecha actual
-            cabeceras = agregarCabecera(cabeceras, len, &(*n));
-            fechaActual = juego[j+1].fecha;
-            // Si es la ultima tupla se guarda su posicion en la cabecera
-            if(j+1 == i-1){
-                fprintf(archivo, "%d,%s,%d,%f,%d,%d,%d,%d,%d,%d\n", juego[j+1].id, juego[j+1].nombre, juego[j+1].restriccion, juego[j+1].precio, juego[j+1].proximamente, juego[j+1].fecha, juego[j+1].gratis, juego[j+1].win, juego[j+1].mac, juego[j+1].lin);
-                len = ftell(archivo);
+                // Se guarda la cabecera y se cambia la fecha actual
                 cabeceras = agregarCabecera(cabeceras, len, &(*n));
-                break;
-                }
+                fechaActual = juego[j+1].fecha;
             }
     }
     // Se cierra el archivo y se retorna la lista de cabeceras 

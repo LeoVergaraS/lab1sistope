@@ -221,7 +221,6 @@ int main(int argc, char *argv[]){
 			//Se escribe en el archivo final
 			char *token = strtok(bufferTotal, ",");
 			aniosLista = atoi(token);
-			
 			if(aniosLista>= anioInicio){
 				token = strtok(NULL, ",");
 				if(bandera == 1){
